@@ -27,8 +27,8 @@ class Druid:
             "Staff": 1
         }
 
-        self.nature_spells = None #NatureSpells()
-        self.spells = None #self.get_spells()
+     #   self.nature_spells = None #NatureSpells()
+      #  self.spells = None #self.get_spells()
 
     def get_spells(self):
         #try avoids having the wrong key

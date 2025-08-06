@@ -28,7 +28,13 @@ char1.display_sheet()
 
 my_input_3 = input("\nBegin adventure? (yes or no) >>>  ")
 
-if my_input_3.lower() == "yes":
-    game_test()
-else:
-    print(f"Your adventure ends. Come back when you're ready.")
+while True:
+    if my_input_3.lower() == "yes":
+        game_test()
+    elif my_input_3.lower() not in {'quit', 'no'}:
+        break
+    else:
+        my_input_3 = input("\n \"{}\" is not a valid entry. Begin adventure? (yes or no) >>>  ".format(my_input_3))
+
+
+print(f"Your adventure ends. Come back when you're ready.")

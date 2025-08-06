@@ -1,0 +1,70 @@
+from characters.nature_spells import NatureSpells
+
+class Druid:
+    def __init__(self, name="Character", age=25, level = 1, experience = 0):
+        self.name = name
+        self.age = age
+        self.level = level
+        self.experience = experience
+        self.attributes = {
+            "Wisdom": 10,
+            "Resolve": 10
+        }
+        self.health = self.attributes["Resolve"] * 10
+        self.casts_per_day = self.level * int(self.attributes["Wisdom"] / 2)
+
+        # dictionary
+        self.skills = {
+            "Druidism": 1,
+            "Herbalism": 1,
+            "Animal Empathy": 1
+        }
+
+        # dictionary
+        self.inventory = {
+            "Alchemy Pouch": 1,
+            "Cloak": 1,
+            "Staff": 1
+        }
+
+        self.nature_spells = NatureSpells()
+        self.spells = self.get_spells()
+
+    def get_spells(self):
+        spells = []
+        if self.level >= 1:
+            spells.extend(self.nature_spells.spells_on_lvl_up(1))
+        if self.level >= 3:
+            spells.extend(self.nature_spells.spells_on_lvl_up(3))
+        return spells
+
+    def gain_experience(self, amount):
+        self.experience += amount
+        self.check_level_up()
+
+    def check_level_up(self):
+        while self.experience >= (10 * self.level):
+            self.experience -= 10 * self.level
+            self.level += 1
+            self.health += 10
+            print(f"You have leveled up! You are now level {self.level}.")
+            self.spells = self.get_spells()
+
+    def display_sheet(self):
+        print(f"\n=== Character Sheet: {self.name} ===")
+        print(f"\nAge: {self.age}")
+        print(f"\nLevel: {self.level}")
+        print(f"\nHealth: {self.health}")
+        print(f"\nExperience: {self.experience}\n")
+        print("\n-- Skills --")
+        for skill, level in self.skills.items():
+            print(f"{skill}: {level}")
+        print("\n-- Spells --")
+        for spell in self.spells:
+            print(f"{spell}")
+        print("Casts per day -", self.casts_per_day)
+        print("\n-- Inventory --")
+        for inventory in self.inventory:
+            print(f'{inventory}: {self.inventory[inventory]}')
+
+for input("Display Character Sheet")

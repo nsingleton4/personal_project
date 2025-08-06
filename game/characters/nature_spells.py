@@ -13,14 +13,14 @@ class NatureSpells:
         }
 
 
-
-if input(nature_spells.spells_by_level, ns_spell_name):
-    return lvl_1_ns_desc
-
-    def spells_on_lvl_up(self, level):
-        """Return the list of spells available at this specific level"""
-        return self.spells_by_level.get(level, [])
-
-
-    def ns_desc(self, spell_name):
-        return self.lvl_1_ns_desc.get(spell_name)
+#
+#    if input(nature_spells.spells_by_level, ns_spell_name):
+#        return lvl_1_ns_desc
+#
+#      def spells_on_lvl_up(self, level):
+#         """Return the list of spells available at this specific level"""
+#            return self.spells_by_level.get(level, [])
+#
+#
+#        def ns_desc(self, spell_name):
+#            return self.lvl_1_ns_desc.get(spell_name)

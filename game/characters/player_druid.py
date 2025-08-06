@@ -27,16 +27,17 @@ class Druid:
             "Staff": 1
         }
 
-        self.nature_spells = NatureSpells()
-        self.spells = self.get_spells()
+        self.nature_spells = None #NatureSpells()
+        self.spells = None #self.get_spells()
 
     def get_spells(self):
-        spells = []
-        if self.level >= 1:
-            spells.extend(self.nature_spells.spells_on_lvl_up(1))
-        if self.level >= 3:
-            spells.extend(self.nature_spells.spells_on_lvl_up(3))
-        return spells
+        #try avoids having the wrong key
+        try:
+            self.spells.extend(self.nature_spells.spells_by_level[self.level])
+        except KeyError:
+            return
+        #sets can only have 1 item, eliminates duplicates
+        self.spells = list(set(self.spells))
 
     def gain_experience(self, amount):
         self.experience += amount
@@ -60,11 +61,9 @@ class Druid:
         for skill, level in self.skills.items():
             print(f"{skill}: {level}")
         print("\n-- Spells --")
-        for spell in self.spells:
-            print(f"{spell}")
+#        for spell in self.spells:
+#            print(f"{spell}")
         print("Casts per day -", self.casts_per_day)
         print("\n-- Inventory --")
         for inventory in self.inventory:
             print(f'{inventory}: {self.inventory[inventory]}')
-
-for input("Display Character Sheet")

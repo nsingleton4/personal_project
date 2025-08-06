@@ -27,7 +27,7 @@ class Druid:
             "Staff": 1
         }
 
-        Gself.nature_spells = None #NatureSpells()
+        self.nature_spells = None #NatureSpells()
         self.spells = None #self.get_spells()
 
     def get_spells(self):

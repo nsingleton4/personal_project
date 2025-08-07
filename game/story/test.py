@@ -1,9 +1,23 @@
 from characters.player_druid import Druid
 
+def start_intro_dialogue():
+    current_node = intro_dialogue["boss_office"]
+
+    while current_node["choice"]:
+        print(current_node["text"])
+        print(current_node["description"])
+
+        for i, choice in enumerate(current_node["choice"]):
+            print(f"{i + 1}: {choice["text"]}")
+
+        user_input = int(input("Choose an option: ")) - 1
+        next_id = current_node["choice"][user_input]["next_node_id"]
+        current_node = intro_dialogue[next_id]
+
 intro_dialogue = {
     "boss_office": {
-        "text": "You walk into your boss' office.\n",
-        "description": "An ornate wooden office that has seen years of use. \n\nCreaking wooden floors accompany every step. \n\nHe tells you, 'Get fucked kiddo you're moving out.' \n",
+        "text": "\nYou walk into your boss' office.\n",
+        "description": "An ornate wooden office that has seen years of use. \nCreaking wooden floors accompany every step. \nHe tells you, 'Get fucked kiddo you're moving out.' \n",
         "choice": [
             {"text": "Get ready.", "next_node_id": "boss_approval"},
             {"text": "Tell him off.", "next_node_id": "boss_disappointment"}
@@ -50,16 +64,3 @@ intro_dialogue = {
         "choice": []
     }
 }
-def start_intro_dialogue():
-    current_node = intro_dialogue["boss_office"]
-
-    while current_node["choice"]:
-        print(current_node["text"])
-        print(current_node["description"])
-
-        for i, choice in enumerate(current_node["choice"]):
-            print(f"{i + 1}: {choice["text"]}")
-
-        user_input = int(input("Choose an option: ")) - 1
-        next_id = current_node["choice"][user_input]["next_node_id"]
-        current_node = intro_dialogue[next_id]

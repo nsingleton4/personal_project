@@ -1,5 +1,5 @@
 from characters.player_druid import Druid
-from story.test import game_test
+from game.test import intro_dialogue
 
 def character_input():
     # making the initial input "False"
@@ -30,7 +30,7 @@ my_input_3 = input("\nBegin adventure? (yes or no) >>>  ")
 
 while True:
     if my_input_3.lower() == "yes":
-        game_test()
+        intro_dialogue()
     elif my_input_3.lower() not in {'quit', 'no'}:
         break
     else:

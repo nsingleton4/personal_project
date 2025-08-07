@@ -12,6 +12,8 @@ class Druid:
         }
         self.health = self.attributes["Resolve"] * 10
         self.casts_per_day = self.level * int(self.attributes["Wisdom"] / 2)
+        self.spells = []
+        self.nature_spells = NatureSpells()
 
         # dictionary
         self.skills = {
@@ -27,9 +29,6 @@ class Druid:
             "Staff": 1
         }
 
-        self.nature_spells = None #NatureSpells()
-        self.spells = None #self.get_spells()
-
     def get_spells(self):
         #try avoids having the wrong key
         try:
@@ -38,6 +37,7 @@ class Druid:
             return
         #sets can only have 1 item, eliminates duplicates
         self.spells = list(set(self.spells))
+        return self.spells
 
     def gain_experience(self, amount):
         self.experience += amount
@@ -61,8 +61,8 @@ class Druid:
         for skill, level in self.skills.items():
             print(f"{skill}: {level}")
         print("\n-- Spells --")
-#        for spell in self.spells:
-#            print(f"{spell}")
+        for spell in self.get_spells():
+            print(f"{spell}")
         print("Casts per day -", self.casts_per_day)
         print("\n-- Inventory --")
         for inventory in self.inventory:

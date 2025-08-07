@@ -20,22 +20,37 @@ intro_dialogue = {
             "You see Calhoun's, the armourer, and your friend, Ayala.",
         ),
         "choice": [
-            {"text": "Go to the armourer."},
-            {"text": "Go to Ayala."},
-            {"text": "Go to your house."}
+            {"text": "Go to the armourer.", "next_node_id": "armourer"},
+            {"text": "Go to Ayala.", "next_node_id": "ayala"},
+            {"text": "Go to your house.", "next_node_id": "house"}
         ]
     },
     "boss_disappointment": {
-        "text": "Talk to me like that again boy and I'll shove that dulled spear up your ass. Get going to the armorer, you don't have a choice in this.",
+        "text": "Talk to me like that again boy and I'll shove that dulled spear up your ass. Get going to the armourer, you don't have a choice in this.",
         "description": (
-            "You walk about after the scolding, annoyed. 'Why me', you wonder. \n",
-            "You appreciate the breeze that usually accompanies a storm approaching.The summer heat has been brutal this year. \n"
-            "You see Calhoun's, the armourer, and your friend, Ayala. \n",
+            "You walk about after the scolding, annoyed. 'Why me', you wonder.\n"
+            "You appreciate the breeze that usually accompanies a storm approaching. The summer heat has been brutal this year.\n"
+            "You see Calhoun's, the armourer, and your friend, Ayala."
         ),
-        "choice":[
-            {"text": "Go to the armourer."},
-            {"text": "Go to Ayala."},
-            {"text": "Go to your house."}
+        "choice": [
+            {"text": "Go to the armourer.", "next_node_id": "armourer"},
+            {"text": "Go to Ayala.", "next_node_id": "ayala"},
+            {"text": "Go to your house.", "next_node_id": "house"}
         ]
+    },
+    "armourer": {
+        "text": "You enter Calhoun's shop.",
+        "description": "Calhoun grunts as he sees you. 'Bout time you came in.'",
+        "choice": []  # End or continue
+    },
+    "ayala": {
+        "text": "Ayala looks up from her book as you approach.",
+        "description": "'Hey, you're finally heading out?' she asks.",
+        "choice": []
+    },
+    "house": {
+        "text": "You head home to pack your things.",
+        "description": "The house is quiet. You feel the weight of the journey ahead.",
+        "choice": []
     }
 }

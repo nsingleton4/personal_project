@@ -1,5 +1,5 @@
 from characters.player_druid import Druid
-from story.test import start_intro_dialogue
+from story.initial_scene import start_intro_dialogue
 
 def character_input():
     # making the initial input "False"

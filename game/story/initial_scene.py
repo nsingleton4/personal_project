@@ -14,6 +14,7 @@ def start_intro_dialogue():
         next_id = current_node["choice"][user_input]["next_node_id"]
         current_node = intro_dialogue[next_id]
 
+
 intro_dialogue = {
     "boss_office": {
         "text": "\nYou walk into your boss' office.\n",
@@ -43,24 +44,24 @@ intro_dialogue = {
             "You see Calhoun's, the armourer, and your friend, Ayala."
         ),
         "choice": [
-            {"text": "Go to the armourer.", "next_node_id": "armourer"},
+            {"text": "Go to the armourer.", "next_node_id": "armorer"},
             {"text": "Go to Ayala.", "next_node_id": "ayala"},
             {"text": "Go to your house.", "next_node_id": "house"}
         ]
     },
-    "armourer": {
+    "armorer": {
         "text": "You enter Calhoun's shop.",
-        "description": "Calhoun grunts as he sees you. 'Bout time you came in.'",
-        "choice": []  # End or continue
+        "description": "bout time",
+        "choice": []
     },
     "ayala": {
         "text": "Ayala looks up from her book as you approach.",
-        "description": "'Hey, you're finally heading out?' she asks.",
+        "description": "finally awake",
         "choice": []
     },
     "house": {
         "text": "You head home to pack your things.",
-        "description": "The house is quiet. You feel the weight of the journey ahead.",
+        "description": "",
         "choice": []
     }
 }

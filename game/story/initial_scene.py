@@ -14,7 +14,6 @@ def start_intro_dialogue():
         next_id = current_node["choice"][user_input]["next_node_id"]
         current_node = intro_dialogue[next_id]
 
-
 intro_dialogue = {
     "boss_office": {
         "text": "\nYou walk into your boss' office.\n",
@@ -31,7 +30,7 @@ intro_dialogue = {
             "You see Calhoun's, the armourer, and your friend, Ayala.",
         ),
         "choice": [
-            {"text": "Go to the armourer.", "next_node_id": "armourer"},
+            {"text": "Go to the armourer.", "next_node_id": "armorer"},
             {"text": "Go to Ayala.", "next_node_id": "ayala"},
             {"text": "Go to your house.", "next_node_id": "house"}
         ]
@@ -65,3 +64,9 @@ intro_dialogue = {
         "choice": []
     }
 }
+
+def give_xp(self):
+    if current_node == "armorer":
+        Druid.experience.set((int(Druid.experience.get())) + 5)
+    else:
+        return

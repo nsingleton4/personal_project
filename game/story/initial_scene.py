@@ -20,7 +20,8 @@ intro_dialogue = {
         "description": "An ornate wooden office that has seen years of use. \nCreaking wooden floors accompany every step. \nHe tells you, 'Get fucked kiddo you're moving out.' \n",
         "choice": [
             {"text": "Get ready.", "next_node_id": "boss_approval"},
-            {"text": "Tell him off.", "next_node_id": "boss_disappointment"}
+            {"text": "Tell him off.", "next_node_id": "boss_disappointment"},
+            {"text": "Open Character Sheet.", "next_node_id": "open character sheet"}
         ]
     },
     "boss_approval": {
@@ -51,17 +52,28 @@ intro_dialogue = {
     "armorer": {
         "text": "You enter Calhoun's shop.",
         "description": "bout time",
-        "choice": []
+        "choice": [
+            {"text": "Go to Ayala.", "next_node_id": "ayala"},
+            {"text": "Go to your house.", "next_node_id": "house"
+        ]
     },
     "ayala": {
         "text": "Ayala looks up from her book as you approach.",
         "description": "finally awake",
-        "choice": []
+        "choice": [
+            {"text": "Go to the armourer.", "next_node_id": "armorer"},
+            {"text": "Go to your house.", "next_node_id": "house"}
+        ]
     },
     "house": {
         "text": "You head home to pack your things.",
         "description": "",
-        "choice": []
+        "choice": [
+            {"text": "Go to the armourer.", "next_node_id": "armorer"},
+        ]
+    },
+    "open character sheet": {
+        print(Druid.display_sheet())
     }
 }
 

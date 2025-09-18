@@ -16,8 +16,8 @@ def start_intro_dialogue():
 
 intro_dialogue = {
     "boss_office": {
-        "text": "\nYou walk into your boss' office.\n",
-        "description": "An ornate wooden office that has seen years of use. \nCreaking wooden floors accompany every step. \nHe tells you, 'Get fucked kiddo you're moving out.' \n",
+        "text": "\nYou were summoned to the center of the grove where only tribunal councils typically occur.\n",
+        "description": "The ornate stone council bench has seen years of use. \nHe tells you, 'Get fucked kiddo you're moving out.' \n",
         "choice": [
             {"text": "Get ready.", "next_node_id": "boss_approval"},
             {"text": "Tell him off.", "next_node_id": "boss_disappointment"},
@@ -73,12 +73,13 @@ intro_dialogue = {
         ]
     },
     "open character sheet": {
-        print(Druid.display_sheet())
+        "text": "Character Sheet:",
+        "action": lambda: print(Druid.display_sheet())
     }
 }
 
-def give_xp(self):
+def give_xp(current_node):
     if current_node == "armorer":
-        Druid.experience.set((int(Druid.experience.get())) + 5)
+        Druid.experience.set(Druid.experience.get() + 5)
     else:
         return

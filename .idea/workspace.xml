@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="trying to figure out how to integrate character sheets to a story">
-      <change beforePath="$PROJECT_DIR$/.idea/Personal_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Personal_Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="just having fun">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/initial_attempt/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/initial_attempt/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/characters/arcane_spells.py" beforeDir="false" afterPath="$PROJECT_DIR$/initial_attempt/characters/arcane_spells.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/characters/nature_spells.py" beforeDir="false" afterPath="$PROJECT_DIR$/initial_attempt/characters/nature_spells.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/characters/player_druid.py" beforeDir="false" afterPath="$PROJECT_DIR$/initial_attempt/characters/player_druid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/story/initial_scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/initial_attempt/story/initial_scene.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/shifter_game/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game2/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/shifter_game/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game2/player/shifter.py" beforeDir="false" afterPath="$PROJECT_DIR$/shifter_game/player/player_shifter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/general_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/general_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shifter_game/player/player_shifter.py" beforeDir="false" afterPath="$PROJECT_DIR$/shifter_game/player/player_shifter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777490324018</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="just having fun">
+      <option name="closed" value="true" />
+      <created>1777491105917</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1777491105917</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,6 +259,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="trying to figure out story" />
     <MESSAGE value="trying to figure out how to integrate character sheets to a story" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to figure out how to integrate character sheets to a story" />
+    <MESSAGE value="just having fun" />
+    <option name="LAST_COMMIT_MESSAGE" value="just having fun" />
   </component>
 </project>

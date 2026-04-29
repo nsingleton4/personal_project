@@ -1,4 +1,4 @@
-from game.characters.player_druid import Druid
+from initial_attempt.characters.player_druid import Druid
 
 druid = Druid()
 druid.gain_experience(30)

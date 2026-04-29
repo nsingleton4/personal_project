@@ -5,8 +5,8 @@ class Shifter:
         self.name = name
         self.age = age
         self.level = level
-        self.experience = experience
         self.health = health
+        self.experience = experience
 
         #dictionaries
         self.transformations = {

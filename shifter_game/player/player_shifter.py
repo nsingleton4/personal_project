@@ -1,11 +1,12 @@
 from tkinter.font import names
 
 class Shifter:
-    def __init__(self, name = "Character", age = 21, level = 1, experience = 1):
+    def __init__(self, name, age, level, health, experience):
         self.name = name
         self.age = age
         self.level = level
         self.experience = experience
+        self.health = health
 
         #dictionaries
         self.transformations = {
@@ -43,15 +44,22 @@ class Shifter:
         print(f"\nLevel: {self.level}")
         print(f"\nHealth: {self.health}")
         print(f"\nExperience: {self.experience}\n")
+
+        # Display Skills
         print("\n-- Skills --")
         for skill, level in self.skills.items():
             print(f"{skill}: {level}")
+
+        # Display Inventory
         print("\n-- Inventory --")
-        for inventory in self.inventory:
-            print(f'{inventory}: {self.inventory[inventory]}')
+        for inventory_item, count in self.inventory.items():
+            print(f'{inventory_item}: {count}')
+
+        # Display Transformations
         print(f"\n-- Transformations --")
-        for transformations in self.transformations:
-            print(f'{transformations}: {self.transformations[transformations]}')
+        for transformation, level in self.transformations.items():
+            print(f'{transformation}')
         print("\n-- Transformations Remaining Today --")
-        for transformation in self.transformations:
-            print(f'{self.level}')
+        print(f'{self.level}')
+        # there will be some way to track the amount of transformations done later
+        # so there will need to be some subtraction from this value

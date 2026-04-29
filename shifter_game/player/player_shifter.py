@@ -1,8 +1,7 @@
 from tkinter.font import names
 
-
 class Shifter:
-    def __init__(self, name = "Character", age = 21, level = 1, experience = 0):
+    def __init__(self, name = "Character", age = 21, level = 1, experience = 1):
         self.name = name
         self.age = age
         self.level = level

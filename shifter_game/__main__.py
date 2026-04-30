@@ -1,3 +1,5 @@
+from shifter_game.dice import roll_dice
+
 # use dictionary rather than class for character
 
 player = {
@@ -31,6 +33,8 @@ print(f'Hello {p1["name"]}')
 
 print(p1["statistics"]["wisdom"])
 print(p1["name"])
+
+print(roll_dice(d20 = True))
 
 
 # def character_input():

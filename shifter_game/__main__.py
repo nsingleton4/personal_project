@@ -34,8 +34,13 @@ print(f'Hello {p1["name"]}')
 print(p1["statistics"]["wisdom"])
 print(p1["name"])
 
+#a single d20 roll
 print(roll_dice(d20 = True))
 
+# 3 individual rolls of a d6 added together
+print(sum([roll_dice(d6 = True),
+          roll_dice(d6 = True),
+          roll_dice(d6 = True)]))
 
 # def character_input():
 #     # making the initial input "False"

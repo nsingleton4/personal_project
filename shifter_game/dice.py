@@ -5,7 +5,7 @@ import random
 #     function_suite
 #     return [expression]
 
-def roll_dice(d20=False, d10=False, d6=False):
+def roll_dice(d20=False, d10=False, d6=False, number = 1):
     if d20:
         return random.randint(1,20)
     elif d10:

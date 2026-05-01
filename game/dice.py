@@ -18,3 +18,11 @@ def roll_dice(d20=False, d10=False, d6=False, number = 1):
 
 if __name__ == "__main__":
     print(roll_dice(d20 = True))
+
+# a single d20 roll
+# print(roll_dice(d20 = True))
+
+# # 3 individual rolls of a d6 added together
+# print(sum([roll_dice(d6 = True),
+#           roll_dice(d6 = True),
+#           roll_dice(d6 = True)]))

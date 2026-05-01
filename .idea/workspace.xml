@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="just having fun">
+      <change afterPath="$PROJECT_DIR$/game/tutorial/scene.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/general_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shifter_game/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shifter_game/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shifter_game/dice.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/dice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shifter_game/player/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/player/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shifter_game/player/player_shifter.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/player/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shifter_game/player/transformations/air.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/player/transformations/air.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shifter_game/player/transformations/earth.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/player/transformations/earth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shifter_game/player/transformations/fire.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/player/transformations/fire.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shifter_game/player/transformations/water.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/player/transformations/water.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shifter_game/scene_practice/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shifter_game/scene_practice/scene_1.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +64,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.__main__ (1).executor": "Run",
     "Python.__main__.executor": "Run",
     "Python.dice.executor": "Run",
     "Python.general_test.executor": "Run",
@@ -66,7 +80,29 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.__main__">
+  <component name="RunManager" selected="Python.__main__ (1)">
+    <configuration name="__main__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Personal_Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/game" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game/__main__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Personal_Project" />
       <option name="ENV_FILES" value="" />
@@ -103,28 +139,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shifter_game/dice.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="general_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Personal_Project" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/general_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -201,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.__main__ (1)" />
         <item itemvalue="Python.__main__" />
         <item itemvalue="Python.dice" />
         <item itemvalue="Python.scene_1" />
         <item itemvalue="Python.player_shifter" />
-        <item itemvalue="Python.general_test" />
       </list>
     </recent_temporary>
   </component>
@@ -432,7 +446,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777577875507</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="just having fun">
+      <option name="closed" value="true" />
+      <created>1777578730688</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1777578730688</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

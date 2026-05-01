@@ -2,6 +2,13 @@
 # all transformations, stats, and abilities will be dictionaries as well
 
 player = {
+    "name": None,
+    "statistics": {
+        "dexterity": None,
+        "wisdom": None,
+        "charisma": None
+        # make a dice function to apply random numbers to stats
+    }
     "inventory": {
         "weapons": {
             "staff": None
@@ -10,14 +17,6 @@ player = {
             "shirt": None
         },
     },
-    "name": None,
-    "statistics": {
-        "dexterity": None,
-        "wisdom": None,
-        "charisma": None
-        # make a dice function to apply random numbers to stats
-        }
-
 }
 
 

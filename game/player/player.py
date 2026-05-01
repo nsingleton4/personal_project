@@ -9,12 +9,8 @@ player = {
         "charisma": None
     },
     "inventory": {
-        "weapons": {
-            "staff": None
-        },
-        "clothes": {
-            "shirt": None
-        },
+        "weapons": None,
+        "clothes": None
     },
 }
 

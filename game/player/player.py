@@ -20,15 +20,15 @@ player = {
 # # player = {} -> this makes a dict but python doesn't like it
 # # player["inventory"] = ... this resets the entire inventory
 #
-# player["inventory"] = {"weapons": {"dagger": "dagger of souls"}} # starting the dictionary, creates the dagger within the weapon class in the inventory
-# player["inventory"]["weapons"]["swords"] = "sword of death" # this adds a sword cat in weapons and adds a sword in that cat
+# player["inventory"] = {"items": {"dagger": "dagger of souls"}} # starting the dictionary, creates the dagger within the weapon class in the inventory
+# player["inventory"]["items"]["swords"] = "sword of death" # this adds a sword cat in items and adds a sword in that cat
 #
-# print(player["inventory"]["weapons"]["dagger"]) # accesses what daggers are in the dict
+# print(player["inventory"]["items"]["dagger"]) # accesses what daggers are in the dict
 #
 # player["inventory"]["clothes"] = "shirt" # adds shirt into clothes key
 # player["inventory"]["pouch"] = None # this adds a pouch key with nothing in it
 # print(player["inventory"]["clothes"]) # accesses clothes key
-# print(player["inventory"]["weapons"]["dagger"]) # accesses dagger key
+# print(player["inventory"]["items"]["dagger"]) # accesses dagger key
 # print(player["inventory"].keys()) # shows all keys within inventory
 #
 

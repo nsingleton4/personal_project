@@ -7,9 +7,7 @@
     <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="just having fun">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/items/conventional_weapons.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/items/conventional_weapons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/initial_attempt/story/initial_scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/initial_attempt/story/initial_scene.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/tutorial/scene1.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +59,7 @@
     "Python.general_test.executor": "Run",
     "Python.main.executor": "Run",
     "Python.player_shifter.executor": "Run",
+    "Python.scene1.executor": "Run",
     "Python.scene_1.executor": "Run",
     "Python.scratch.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -161,7 +160,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scene_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="scene1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Personal_Project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -170,11 +169,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/shifter_game/scene_practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/game/tutorial" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shifter_game/scene_practice/scene_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game/tutorial/scene1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -208,10 +207,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.__main__ (1)" />
+        <item itemvalue="Python.scene1" />
         <item itemvalue="Python.scratch" />
         <item itemvalue="Python.__main__" />
         <item itemvalue="Python.dice" />
-        <item itemvalue="Python.scene_1" />
       </list>
     </recent_temporary>
   </component>
@@ -494,7 +493,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777668118171</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="just having fun">
+      <option name="closed" value="true" />
+      <created>1777669079136</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1777669079136</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

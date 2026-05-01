@@ -7,7 +7,6 @@ player = {
         "dexterity": None,
         "wisdom": None,
         "charisma": None
-        # make a die function to apply random numbers to stats
     },
     "inventory": {
         "weapons": {

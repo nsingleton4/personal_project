@@ -1,5 +1,5 @@
 from game.dice import roll_dice
-from game.player.player import player
+from game.player.player import player, display_sheet
 from game.items.conventional_weapons import basic_spear
 from game.items.clothes import basic_tunic
 
@@ -24,13 +24,15 @@ print(f'Your Charisma is {p1["statistics"]["charisma"]}')
 
 print(input("\nPress Enter to cont."))
 
-print("""As you wake, your worn tunic slides over your chest, rough with years of abuse and sweat.
-As you approach the door, you grab the spear given to you after the first time you mastered a form.\n""")
+print("You put on your tunic and grab your spear as you head out the door.\n")
 
-print("\x1B[3m* Your tunic and spear have been added to your inventory *\x1B[23m\n")
+print("\x1B[3m* Your tunic and spear have been added to your inventory *\x1B[23m")
 p1["inventory"]["weapons"] = basic_spear
 p1["inventory"]["clothes"] = basic_tunic
 
-print(p1["inventory"])
+print(input("\nPress Enter to view your character sheet."))
+
+display_sheet(p1)
+
 
 

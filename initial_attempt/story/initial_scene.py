@@ -74,7 +74,7 @@ intro_dialogue = {
     },
     "open character sheet": {
         "text": "Character Sheet:",
-        "action": lambda: print(Druid.display_sheet())
+        "action": lambda: print(Druid.display())
     }
 }
 

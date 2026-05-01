@@ -14,6 +14,18 @@ player = {
     },
 }
 
+def display_sheet(player):
+    print(f"\nName: {player['name']}")
+    print() # blank line
+    print(' -- Statistics -- ')
+    for stat, value in player["statistics"].items():
+        print(f"{stat.capitalize()}: {value}")
+    print()
+    print(' -- Inventory -- ')
+    for category, items in player["inventory"].items():
+        print(f"{category.capitalize()}: {items}")
+
+
 
 # # for the game, start with an empty dictionary
 # player = dict()

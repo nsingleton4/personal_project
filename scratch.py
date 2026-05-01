@@ -1,5 +1,3 @@
-from pprint import pprint as print
-
 player = {
     "name": None,
     "statistics": {
@@ -14,13 +12,13 @@ player = {
 }
 
 def display_player(player):
-    print(f"Name: {player['name']}")
-
-    print("\n -- Statistics --")
+    print(f"\nName: {player['name']}")
+    print() # blank line
+    print(' -- Statistics -- ')
     for stat, value in player["statistics"].items():
         print(f"{stat.capitalize()}: {value}")
-
-    print("\n -- Inventory --:")
+    print()
+    print(' -- Inventory -- ')
     for category, items in player["inventory"].items():
         print(f"{category.capitalize()}: {items}")
 

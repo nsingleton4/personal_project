@@ -7,8 +7,8 @@ player = {
         "dexterity": None,
         "wisdom": None,
         "charisma": None
-        # make a dice function to apply random numbers to stats
-    }
+        # make a die function to apply random numbers to stats
+    },
     "inventory": {
         "weapons": {
             "staff": None

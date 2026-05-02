@@ -40,8 +40,8 @@ begin = input("\nBegin adventure? (Yes or No) >>>  ")
 while True:
     if begin.lower() == "yes":
         print(attack["front_door"])
+        break
     elif begin.lower() not in {'quit', 'no'}:
         break
     else:
-        begin = input("\n \"{}\" is not a valid entry. Begin adventure? (yes or no) >>>  ".format(my_input_3))
-print(f"Your adventure ends. Come back when you're ready.")
+        begin = input("\n \"{}\" is not a valid entry. Begin adventure? (yes or no) >>>  ".format(begin))

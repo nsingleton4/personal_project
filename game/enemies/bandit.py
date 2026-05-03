@@ -1,0 +1,18 @@
+from game.items.conventional_weapons import worn_longsword
+from game.items.clothes import rough_leathers
+from game.dice import roll_dice
+
+bandit = {
+    "name": "Bandit",
+    "statistics": {
+        "hp": 5,
+        "dexterity": 5,
+        "wisdom": 5,
+        "charisma": 5
+    },
+    "inventory": {
+        "weapon": worn_longsword,
+        "armor": rough_leathers
+    },
+    "initiative": 1 + roll_dice(d6=True)
+}

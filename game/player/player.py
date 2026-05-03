@@ -1,3 +1,4 @@
+from game.dice import roll_dice
 # player is a dictionary rather than a class
 # all transformations, stats, and abilities will be dictionaries as well
 
@@ -6,12 +7,14 @@ player = {
     "statistics": {
         "dexterity": None,
         "wisdom": None,
-        "charisma": None
+        "charisma": None,
+        "hp": 10
     },
     "inventory": {
         "weapons": None,
         "clothes": None
     },
+    "initiative": 1 + roll_dice(d6=True)
 }
 
 def display_sheet(player):

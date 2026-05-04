@@ -15,18 +15,15 @@ def scene_1(p1, p2=None):
     print("2. Run")
     action = input("Choose your action: ")
     if action.lower() == "1":
-        player_turn_tutorial_fight(p1, enemy_1)
-
+        tutorial_fight(p1, enemy_1)
 
 def attack_roll(player, weapons):
     return roll_dice(d20=True) + weapons["attack_bonus"] + player["statistics"]["dexterity"]
 
-
 def damage_roll(weapons):
     return roll_dice(d6=True) + weapons["damage_bonus"]
 
-
-def player_turn_tutorial_fight(player, enemy):
+def tutorial_fight(player, enemy):
     while player["statistics"]["hp"] > 0 and enemy_1["statistics"]["hp"] > 0:
         print(f"\nYour HP: {player["statistics"]['hp']} | Bandit HP: {enemy_1["statistics"]['hp']}")
         print("1. Attack")

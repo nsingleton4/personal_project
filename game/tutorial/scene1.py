@@ -44,7 +44,7 @@ def tutorial_fight(player, enemy):
                 print(f"Hit! You deal {damage} damage!")
             else:
                 print("Miss!")
-
+        # i think the increased value sticks no matter what
         elif choice == "2":
             player["inventory"]["clothes"]["shirt"]["defense"] += 5
             print(f"\nYour defense increased to {player["inventory"]["clothes"]["shirt"]["defense"]}!")

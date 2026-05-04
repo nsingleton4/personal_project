@@ -22,11 +22,11 @@ def display_sheet(player):
     print() # blank line
     print(' -- Statistics -- ')
     for stat, value in player["statistics"].items():
-        print(f"{stat.capitalize()}: {value}")
+        print(f"{stat.lower()}: {value}")
     print()
     print(' -- Inventory -- ')
     for category, items in player["inventory"].items():
-        print(f"{category.capitalize()}: {items}")
+        print(f"{category.lower()}: {items}")
 
 
 

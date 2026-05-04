@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="just having fun">
-      <change beforePath="$PROJECT_DIR$/.idea/Personal_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Personal_Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="fight scene">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/enemies/bandit.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/enemies/bandit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/items/conventional_weapons.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/items/conventional_weapons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/player/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/player/player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/tutorial/scene1.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {}
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/nsingleton4/personal_project.git&quot;,
@@ -501,7 +499,31 @@
       <option name="project" value="LOCAL" />
       <updated>1777669079136</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="fight scene">
+      <option name="closed" value="true" />
+      <created>1777906722059</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1777906722063</updated>
+    </task>
+    <task id="LOCAL-00036" summary="fight scene">
+      <option name="closed" value="true" />
+      <created>1777906729973</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1777906729973</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fight scene">
+      <option name="closed" value="true" />
+      <created>1777906753863</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1777906753863</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -520,6 +542,7 @@
     <MESSAGE value="trying to figure out story" />
     <MESSAGE value="trying to figure out how to integrate character sheets to a story" />
     <MESSAGE value="just having fun" />
-    <option name="LAST_COMMIT_MESSAGE" value="just having fun" />
+    <MESSAGE value="fight scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="fight scene" />
   </component>
 </project>

@@ -4,12 +4,17 @@ from game.items.clothes import rough_leathers
 from game.items.conventional_weapons import basic_spear
 from game.enemies.bandit import bandit
 from game.dice import roll_dice
+from game.player.player import display_sheet
+
 
 def scene_1(p1, p2=None):
     print(f"Hi, {p1["name"]}")
     print("\n\nYou walk out the front door and see a bandit trying to rob you")
-    action = input("What do you do? (attack or run) >>> ")
-    if action.lower() == "attack":
+    print("What do you do?")
+    print("1. Attack")
+    print("2. Run")
+    action = input("Choose your action: ")
+    if action.lower() == "1":
         p1 = player_turn_tutorial_fight(p1, bandit)
     return p1
 
@@ -35,7 +40,7 @@ def player_turn_tutorial_fight(player, bandit):
             defense = bandit["inventory"]["clothes"]["defense"]
 
             attack = attack_roll(player, weapon)
-            print(f"You rolled {attack} to hit!")
+            print(f"\nYou rolled {attack} to hit!")
 
             if attack > defense:
                 damage = damage_roll(weapon)
@@ -57,5 +62,6 @@ def player_turn_tutorial_fight(player, bandit):
     else:
         print("You defeated the bandit!")
 
+    display_sheet(player)
     return player
 

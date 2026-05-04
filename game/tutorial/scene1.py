@@ -4,6 +4,7 @@ from game.items.clothes import rough_leathers
 from game.items.conventional_weapons import basic_spear
 from game.player.player import player
 from game.enemies.bandit import bandit
+from game.dice import roll_dice
 
 def start_intro():
     current_node = attack["front_door"]
@@ -17,7 +18,6 @@ def start_intro():
         user_input = int(input("Choose an option: ")) - 1
         selected_choice = current_node["choice"][user_input]
 
-        # 🔥 trigger action instead of switching node
         if selected_choice.get("action") == "start_fight":
             player_turn_tutorial_fight(player, bandit)
             break
@@ -37,7 +37,7 @@ def attack_roll(player, weapon):
 
 
 def damage_roll(weapon):
-    return weapon["damage_dice"] + weapon["stat_bonus"]
+    return roll_dice(d6=True) + weapon["stat_bonus"]
 
 
 def player_turn_tutorial_fight(player, bandit):
@@ -65,7 +65,6 @@ def player_turn_tutorial_fight(player, bandit):
         elif choice == "2":
             print("You defend!")
 
-        # 👇 bandit's turn (basic AI)
         if bandit["hp"] > 0:
             print("\nThe bandit attacks!")
             player["hp"] -= 2  # placeholder damage
@@ -76,3 +75,17 @@ def player_turn_tutorial_fight(player, bandit):
         print("You lost!")
     else:
         print("You defeated the bandit!")
+
+fight_success = {
+    "defeated_bandit": {
+        "text": """\nYou see the body of the bandit laying on the ground in front of you. 
+        Just then, your friend Placeholder Name comes running up to you.""",
+        "choice": [
+            {"text": "Howdy how are ya?", "action": "say_hello"},
+        ]
+    }
+}
+
+say_hello = {
+
+}

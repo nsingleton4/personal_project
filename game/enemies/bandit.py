@@ -5,7 +5,7 @@ from game.dice import roll_dice
 bandit = {
     "name": "Bandit",
     "statistics": {
-        "hp": 5,
+        "hp": 10,
         "dexterity": 5,
         "wisdom": 5,
         "charisma": 5

@@ -87,5 +87,7 @@ fight_success = {
 }
 
 say_hello = {
+    "friend_talk": {
 
+    }
 }

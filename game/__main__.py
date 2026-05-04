@@ -2,7 +2,6 @@ from game.dice import roll_dice
 from game.player.player import player, display_sheet
 from game.items.conventional_weapons import basic_spear
 from game.items.clothes import basic_tunic
-from game.tutorial.scene1 import attack
 from game.tutorial.scene1 import scene_1
 
 def character_creation():
@@ -29,8 +28,8 @@ def character_creation():
     print("You put on your tunic and grab your spear as you head out the door.\n")
 
     print("\x1B[3m* Your tunic and spear have been added to your inventory *\x1B[23m")
-    p1["inventory"]["weapons"] = basic_spear
-    p1["inventory"]["clothes"] = basic_tunic
+    p1["inventory"]["weapons"] = {"spear":basic_spear}
+    p1["inventory"]["clothes"] = {"shirt":basic_tunic}
 
     print(input("\nPress Enter to view your character sheet."))
 
@@ -42,12 +41,12 @@ def start():
         begin = input("\nBegin adventure? (Yes or No) >>>  ")
         if begin.lower() == "yes":
             p1 = character_creation()
-            scene_1(p1)
+            p1 = scene_1(p1)
             break
         elif begin.lower() in {'quit', 'no'}:
             break
         else:
-            begin = input("\n \"{}\" is not a valid entry. Begin adventure? (yes or no) >>>  ".format(begin))
+            print("\n \"{}\" is not a valid entry. Begin adventure? (yes or no) >>>  ".format(begin))
 
 if __name__ == "__main__":
     start()

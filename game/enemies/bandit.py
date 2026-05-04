@@ -12,7 +12,7 @@ bandit = {
     },
     "inventory": {
         "weapon": worn_longsword,
-        "armor": rough_leathers
+        "clothes": rough_leathers
     },
     "initiative": 1 + roll_dice(d6=True)
 }

@@ -23,28 +23,19 @@ from game.dice import roll_dice
 
 def scene_1(p1, p2=None):
     print(f"Hi, {p1["name"]}")
-    print("You walk out the front door and see a bandit trying to rob you")
-    action = input("What do you do? (attack or run)")
+    print("\n\nYou walk out the front door and see a bandit trying to rob you")
+    action = input("What do you do? (attack or run) >>> ")
     if action.lower() == "attack":
-        player_turn_tutorial_fight(p1, bandit)
+        p1 = player_turn_tutorial_fight(p1, bandit)
+    return p1
 
 
-attack = {
-    "front_door": {
-        "text": "\nYou walk out the front door and see a bandit trying to rob you",
-        "choice": [
-            {"text": "attack", "action": "player_turn_tutorial_fight"},
-        ]
-    }
-}
-
-def attack_roll(player, weapon):
-    roll = weapon["attack_dice"]
-    return roll + weapon["stat_bonus"] + player["statistics"]["dexterity"]
+def attack_roll(player, weapons):
+    return roll_dice(d20=True) + weapons["attack_bonus"] + player["statistics"]["dexterity"]
 
 
-def damage_roll(weapon):
-    return roll_dice(d6=True) + weapon["stat_bonus"]
+def damage_roll(weapons):
+    return roll_dice(d6=True) + weapons["damage_bonus"]
 
 
 def player_turn_tutorial_fight(player, bandit):
@@ -56,8 +47,8 @@ def player_turn_tutorial_fight(player, bandit):
         choice = input("Choose your action: ")
 
         if choice == "1":
-            weapon = player["inventory"]["weapons"]["basic_spear"]
-            defense = bandit["inventory"]["clothes"]["rough_leathers"]["defense"]
+            weapon = player["inventory"]["weapons"]["spear"]
+            defense = bandit["inventory"]["clothes"]["defense"]
 
             attack = attack_roll(player, weapon)
             print(f"You rolled {attack} to hit!")
@@ -72,29 +63,15 @@ def player_turn_tutorial_fight(player, bandit):
         elif choice == "2":
             print("You defend!")
 
-        if bandit["hp"] > 0:
+        if bandit["statistics"]["hp"] > 0:
             print("\nThe bandit attacks!")
             player["statistics"]["hp"] -= 2  # placeholder damage
             print("You take 2 damage!")
 
-    # result
     if player["statistics"]["hp"] <= 0:
         print("You lost!")
     else:
         print("You defeated the bandit!")
 
-fight_success = {
-    "defeated_bandit": {
-        "text": """\nYou see the body of the bandit laying on the ground in front of you. 
-        Just then, your friend Placeholder Name comes running up to you.""",
-        "choice": [
-            {"text": "Howdy how are ya?", "action": "say_hello"},
-        ]
-    }
-}
+    return player
 
-say_hello = {
-    "friend_talk": {
-
-    }
-}

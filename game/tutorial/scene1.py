@@ -47,7 +47,7 @@ def tutorial_fight(player, enemy):
 
         elif choice == "2":
             player["inventory"]["clothes"]["shirt"]["defense"] += 5
-            print(f"Your defense increased to {player["inventory"]["clothes"]["shirt"]["defense"]}!")
+            print(f"\nYour defense increased to {player["inventory"]["clothes"]["shirt"]["defense"]}!")
 
         if enemy_1["statistics"]["hp"] > 0:
             print("\nThe bandit attacks!")
@@ -56,7 +56,7 @@ def tutorial_fight(player, enemy):
             player_defense = player["inventory"]["clothes"]["shirt"]["defense"]
 
             if enemy_1_attack > player_defense:
-                enemy_1_dmg = roll_dice(d6=True) - 2
+                enemy_1_dmg = roll_dice(d4=True)
                 player["statistics"]["hp"] -= enemy_1_dmg
                 print(f"You take {enemy_1_dmg} damage!")
             else:

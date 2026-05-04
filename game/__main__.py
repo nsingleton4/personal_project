@@ -1,14 +1,14 @@
 from game.dice import roll_dice
-from game.player.player import player, display_sheet
+from game.player.player import empty_player_dict, display_sheet
 from game.items.conventional_weapons import basic_spear
 from game.items.clothes import basic_tunic
 from game.tutorial.scene1 import scene_1
 
 def character_creation():
-    p1 = player.copy()
+    player = empty_player_dict.copy()
     name = input("\nWhat is your name?\n Enter name >>> ")
-    p1["name"] = name
-    print(f'\nHello {p1["name"]}')
+    player["name"] = name
+    print(f'\nHello {player["name"]}')
 
     # making the stats random until I can figure out how to allow the player to choose their stats later
     baseline = 5
@@ -16,32 +16,32 @@ def character_creation():
     wis = baseline + roll_dice(d10=True)
     cha = baseline + roll_dice(d10=True)
 
-    p1["statistics"]["dexterity"] = dex
-    print(f'Your Dexterity in human form is {p1["statistics"]["dexterity"]}')
-    p1["statistics"]["wisdom"] = wis
-    print(f'Your Wisdom is {p1["statistics"]["wisdom"]}')
-    p1["statistics"]["charisma"] = cha
-    print(f'Your Charisma is {p1["statistics"]["charisma"]}')
+    player["statistics"]["dexterity"] = dex
+    print(f'Your Dexterity in human form is {player["statistics"]["dexterity"]}')
+    player["statistics"]["wisdom"] = wis
+    print(f'Your Wisdom is {player["statistics"]["wisdom"]}')
+    player["statistics"]["charisma"] = cha
+    print(f'Your Charisma is {player["statistics"]["charisma"]}')
 
     print(input("\nPress Enter to cont."))
 
     print("You put on your tunic and grab your spear as you head out the door.\n")
 
     print("\x1B[3m* Your tunic and spear have been added to your inventory *\x1B[23m")
-    p1["inventory"]["weapons"] = {"spear":basic_spear}
-    p1["inventory"]["clothes"] = {"shirt":basic_tunic}
+    player["inventory"]["weapons"] = {"spear":basic_spear}
+    player["inventory"]["clothes"] = {"shirt":basic_tunic}
 
     print(input("\nPress Enter to view your character sheet."))
 
-    display_sheet(p1)
-    return p1
+    display_sheet(player)
+    return player
 
 def start():
     while True:
         begin = input("\nBegin adventure? (Yes or No) >>>  ")
         if begin.lower() == "yes":
-            p1 = character_creation()
-            p1 = scene_1(p1)
+            player = character_creation()
+            scene_1(player)
             break
         elif begin.lower() in {'quit', 'no'}:
             break

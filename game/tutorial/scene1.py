@@ -15,8 +15,7 @@ def scene_1(p1, p2=None):
     print("2. Run")
     action = input("Choose your action: ")
     if action.lower() == "1":
-        p1 = player_turn_tutorial_fight(p1, bandit)
-    return p1
+        player_turn_tutorial_fight(p1, bandit)
 
 
 def attack_roll(player, weapons):
@@ -63,5 +62,4 @@ def player_turn_tutorial_fight(player, bandit):
         print("You defeated the bandit!")
 
     display_sheet(player)
-    return player
 

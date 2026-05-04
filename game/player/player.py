@@ -2,7 +2,7 @@ from game.dice import roll_dice
 # player is a dictionary rather than a class
 # all transformations, stats, and abilities will be dictionaries as well
 
-player = {
+empty_player_dict = {
     "name": None,
     "statistics": {
         "dexterity": None,

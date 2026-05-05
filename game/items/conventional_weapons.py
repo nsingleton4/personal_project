@@ -1,4 +1,4 @@
-from game.dice import roll_dice
+from game.structural import roll_dice
 
 basic_spear = {
     "name": "Trusty Spear",

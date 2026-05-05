@@ -1,10 +1,9 @@
 import random
 import time
 from game.enemies.bandit import enemy
-from game.dice import roll_dice
 from game.player.player import display_sheet
 from game.tutorial.scene_2 import scene_2
-from game.structural import slow_print, ital, miss_dict, hit_dict
+from game.structural import slow_print, ital, miss_dict, hit_dict, roll_dice
 
 def scene_1(p1, p2=None):
     time.sleep(2)

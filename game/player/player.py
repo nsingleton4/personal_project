@@ -1,4 +1,4 @@
-from game.dice import roll_dice
+from game.structural import roll_dice
 # player is a dictionary rather than a class
 # all transformations, stats, and abilities will be dictionaries as well
 

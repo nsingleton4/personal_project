@@ -1,6 +1,6 @@
 from game.items.conventional_weapons import worn_longsword
 from game.items.clothes import rough_leathers
-from game.dice import roll_dice
+from game.structural import roll_dice
 
 enemy = {
     "name": "Bandit",

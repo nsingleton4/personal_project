@@ -1,13 +1,15 @@
 miss_dict = {
-    1: "You swing wide right.",
-    2: "The enemy swerves out of the way of the swing.",
-    3: "You missed.",
-    4: "Your attack was parried.",
-    5: "Your enemy ducked under your swing."
+    1: "You swing wide!",
+    2: "The enemy dodges!",
+    3: "Your attack misses!",
+    4: "Your attack was parried!",
+    5: "Your blow glances off harmlessly!"
 }
 
 hit_dict = {
-    1: "Your spear grazes the arm.",
-    2: "Your spear embeds into the stomach.",
-    3: "The staff of the spear hits the enemy on the head.",
+    1: "Your strike lands cleanly!",
+    2: "A solid hit connects!",
+    3: "You slash through your enemy!",
+    4: "Your weapon hits with force!",
+    5: "A direct blow lands on target!"
 }

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="just muckin about">
+    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="added slow printing because it seemed cool">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/structural.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/structural.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/supplemental/combat.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/game/tutorial/scene1.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/tutorial/scene_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene_2.py" afterDir="false" />
     </list>
@@ -227,22 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754490511255</updated>
-    </task>
-    <task id="LOCAL-00010" summary="trying to figure out how to integrate character sheets to a story">
-      <option name="closed" value="true" />
-      <created>1755121331012</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1755121331012</updated>
-    </task>
-    <task id="LOCAL-00011" summary="trying to figure out how to integrate character sheets to a story">
-      <option name="closed" value="true" />
-      <created>1755284858171</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1755284858171</updated>
     </task>
     <task id="LOCAL-00012" summary="trying to figure out how to integrate character sheets to a story">
       <option name="closed" value="true" />
@@ -620,7 +606,23 @@
       <option name="project" value="LOCAL" />
       <updated>1778014554239</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="just muckin about">
+      <option name="closed" value="true" />
+      <created>1778015679955</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1778015679955</updated>
+    </task>
+    <task id="LOCAL-00060" summary="added slow printing because it seemed cool">
+      <option name="closed" value="true" />
+      <created>1778016043542</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1778016043542</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -643,6 +645,7 @@
     <MESSAGE value="took out defend idk how to get that to work yet" />
     <MESSAGE value="adding random things" />
     <MESSAGE value="just muckin about" />
-    <option name="LAST_COMMIT_MESSAGE" value="just muckin about" />
+    <MESSAGE value="added slow printing because it seemed cool" />
+    <option name="LAST_COMMIT_MESSAGE" value="added slow printing because it seemed cool" />
   </component>
 </project>

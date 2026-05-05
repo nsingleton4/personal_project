@@ -1,13 +1,14 @@
 import random
+import time
 from game.enemies.bandit import enemy
 from game.dice import roll_dice
 from game.player.player import display_sheet
-from game.supplemental.combat import miss_dict, hit_dict
 from game.tutorial.scene_2 import scene_2
-from game.structural import slow_print
+from game.structural import slow_print, ital, miss_dict, hit_dict
 
 def scene_1(p1, p2=None):
-    slow_print("\n\nYou walk out the front door and see a bandit trying to rob you")
+    time.sleep(2)
+    slow_print("\n\nYou walk out the front door and see a bandit trying to rob you!")
     slow_print("What do you do?")
     print("1. Attack")
     print("2. Run")
@@ -39,7 +40,7 @@ def tutorial_fight(player, enemy):
         choice = input("Choose your action: ")
 
         if choice == "1":
-            print("\nYou ready and thrust your spear.")
+            print(ital("\nYou ready and thrust your spear."))
             turn_taken = True
             weapon = player["inventory"]["weapons"]["spear"]
             defense = enemy["inventory"]["clothes"]["defense"]
@@ -76,6 +77,7 @@ def tutorial_fight(player, enemy):
         slow_print("You lost!")
     else:
         slow_print("You defeated the bandit!")
+        time.sleep(2)
 
         scene_2(player)
 

@@ -1,9 +1,10 @@
+import time
 from game.dice import roll_dice
 from game.player.player import empty_player_dict, display_sheet
 from game.items.conventional_weapons import basic_spear
 from game.items.clothes import basic_tunic
 from game.tutorial.scene1 import scene_1
-from game.structural import slow_print
+from game.structural import slow_print, ital
 
 def roll_stat(stat_name):
     while True:
@@ -33,16 +34,19 @@ def character_creation():
     slow_print(f'Your Wisdom is {player["statistics"]["wisdom"]}')
     player["statistics"]["charisma"] = cha
     slow_print(f'Your Charisma is {player["statistics"]["charisma"]}')
+    time.sleep(1.5)
 
     print(input("\nPress Enter to cont."))
 
     slow_print("You put on your tunic and grab your spear as you head out the door.\n")
 
-    slow_print("\x1B[3m* Your tunic and spear have been added to your inventory *\x1B[23m")
+    slow_print(ital("* Your tunic and spear have been added to your inventory *"))
     player["inventory"]["weapons"] = {"spear":basic_spear}
     player["inventory"]["clothes"] = {"shirt":basic_tunic}
+    time.sleep(1.5)
 
     print(input("\nPress Enter to view your character sheet."))
+    time.sleep(1)
 
     display_sheet(player)
     return player

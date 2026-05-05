@@ -6,6 +6,7 @@ from game.enemies.bandit import enemy
 from game.dice import roll_dice
 from game.player.player import display_sheet
 from game.supplemental.combat import miss_dict, hit_dict
+from game.tutorial.scene_2 import scene_2
 
 def scene_1(p1, p2=None):
     print("\n\nYou walk out the front door and see a bandit trying to rob you")
@@ -77,6 +78,8 @@ def tutorial_fight(player, enemy):
         print("You lost!")
     else:
         print("You defeated the bandit!")
+
+        scene_2(player)
 
 def escape(player):
     print("""\nYou hear the bandit laughing as you run saying \x1B[3mI'm gonna get all your stuff!\x1B[0m""")

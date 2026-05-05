@@ -1,8 +1,22 @@
+from selectors import SelectSelector
+
 from game.dice import roll_dice
 from game.player.player import empty_player_dict, display_sheet
 from game.items.conventional_weapons import basic_spear
 from game.items.clothes import basic_tunic
 from game.tutorial.scene1 import scene_1
+
+def roll_stat(stat_name):
+    while True:
+        stat_roll = 8 + roll_dice(d10=True)
+        choice = input(f"\rYour {stat_name} is {stat_roll} (1: Accept or 2: Reroll) ").lower().strip()
+
+        if choice == "1":
+            return stat_roll
+        elif choice == "2":
+            continue
+        else:
+            print('Please type "Accept" or "Reroll"')
 
 def character_creation():
     player = empty_player_dict.copy()
@@ -10,14 +24,12 @@ def character_creation():
     player["name"] = name
     print(f'\nHello {player["name"]}')
 
-    # making the stats random until I can figure out how to allow the player to choose their stats later
-    baseline = 5
-    dex = baseline + roll_dice(d10=True)
-    wis = baseline + roll_dice(d10=True)
-    cha = baseline + roll_dice(d10=True)
+    dex = roll_stat("Dexterity")
+    wis = roll_stat("Wisdom")
+    cha = roll_stat("Charisma")
 
     player["statistics"]["dexterity"] = dex
-    print(f'Your Dexterity in human form is {player["statistics"]["dexterity"]}')
+    print(f'\nYour Dexterity is {player["statistics"]["dexterity"]}')
     player["statistics"]["wisdom"] = wis
     print(f'Your Wisdom is {player["statistics"]["wisdom"]}')
     player["statistics"]["charisma"] = cha

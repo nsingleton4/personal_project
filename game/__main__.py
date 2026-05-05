@@ -1,5 +1,3 @@
-from selectors import SelectSelector
-
 from game.dice import roll_dice
 from game.player.player import empty_player_dict, display_sheet
 from game.items.conventional_weapons import basic_spear
@@ -9,7 +7,8 @@ from game.tutorial.scene1 import scene_1
 def roll_stat(stat_name):
     while True:
         stat_roll = 8 + roll_dice(d10=True)
-        choice = input(f"\rYour {stat_name} is {stat_roll} (1: Accept or 2: Reroll) ").lower().strip()
+        choice = input(f"Your {stat_name} is {stat_roll} (1: Accept or 2: Reroll) ").lower().strip()
+
 
         if choice == "1":
             return stat_roll

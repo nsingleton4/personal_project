@@ -1,21 +1,27 @@
 from tabnanny import check
-
 from game.items.clothes import rough_leathers
 from game.items.conventional_weapons import basic_spear
-from game.enemies.bandit import enemy_1
+from game.enemies.bandit import enemy
 from game.dice import roll_dice
 from game.player.player import display_sheet
 
-
 def scene_1(p1, p2=None):
-    print(f"Hi, {p1["name"]}")
     print("\n\nYou walk out the front door and see a bandit trying to rob you")
     print("What do you do?")
     print("1. Attack")
     print("2. Run")
+    print("3. Display Character Sheet")
     action = input("Choose your action: ")
     if action.lower() == "1":
-        tutorial_fight(p1, enemy_1)
+        tutorial_fight(p1, enemy)
+    elif action.lower() == "2":
+        escape(p1)
+    elif action.lower() == "3":
+        display_sheet(p1)
+        return scene_1(p1)
+    else:
+        print("You must make another selection.")
+        return scene_1(p1)
 
 def attack_roll(player, weapons):
     return roll_dice(d20=True) + weapons["attack_bonus"] + player["statistics"]["dexterity"]
@@ -24,41 +30,42 @@ def damage_roll(weapons):
     return roll_dice(d6=True) + weapons["damage_bonus"]
 
 def tutorial_fight(player, enemy):
-    while player["statistics"]["hp"] > 0 and enemy_1["statistics"]["hp"] > 0:
-        print(f"\nYour HP: {player["statistics"]['hp']} | Bandit HP: {enemy_1["statistics"]['hp']}")
+    while player["statistics"]["hp"] > 0 and enemy["statistics"]["hp"] > 0:
+        print(f"\nYour HP: {player["statistics"]['hp']} | Bandit HP: {enemy["statistics"]['hp']}")
         print("1. Attack")
-        print("2. Defend")
+        print("2. Check Character Sheet")
 
         choice = input("Choose your action: ")
 
         if choice == "1":
+            turn_taken = True
             weapon = player["inventory"]["weapons"]["spear"]
-            defense = enemy_1["inventory"]["clothes"]["defense"]
+            defense = enemy["inventory"]["clothes"]["defense"]
 
             attack = attack_roll(player, weapon)
             print(f"\nYou rolled {attack} to hit!")
 
             if attack > defense:
                 damage = damage_roll(weapon)
-                enemy_1["statistics"]["hp"] -= damage
+                enemy["statistics"]["hp"] -= damage
                 print(f"Hit! You deal {damage} damage!")
             else:
                 print("Miss!")
-        # i think the increased value sticks no matter what
-        elif choice == "2":
-            player["inventory"]["clothes"]["shirt"]["defense"] += 5
-            print(f"\nYour defense increased to {player["inventory"]["clothes"]["shirt"]["defense"]}!")
 
-        if enemy_1["statistics"]["hp"] > 0:
+        elif choice == "2":
+            turn_taken = False
+            display_sheet(player)
+
+        if turn_taken and enemy["statistics"]["hp"] > 0:
             print("\nThe bandit attacks!")
-            enemy_1_attack = roll_dice(d20=True)
-            print(f"The bandit rolled a {enemy_1_attack} to attack!")
+            enemy_attack = roll_dice(d20=True)
+            print(f"The bandit rolled a {enemy_attack} to attack!")
             player_defense = player["inventory"]["clothes"]["shirt"]["defense"]
 
-            if enemy_1_attack > player_defense:
-                enemy_1_dmg = roll_dice(d4=True)
-                player["statistics"]["hp"] -= enemy_1_dmg
-                print(f"You take {enemy_1_dmg} damage!")
+            if enemy_attack > player_defense:
+                enemy_dmg = roll_dice(d4=True)
+                player["statistics"]["hp"] -= enemy_dmg
+                print(f"You take {enemy_dmg} damage!")
             else:
                 print("The bandit misses!")
 
@@ -67,5 +74,5 @@ def tutorial_fight(player, enemy):
     else:
         print("You defeated the bandit!")
 
-    display_sheet(player)
-
+def escape(player):
+    print("""\nYou hear the bandit laughing as you run saying \x1B[3mI'm gonna get all your stuff!\x1B[0m""")

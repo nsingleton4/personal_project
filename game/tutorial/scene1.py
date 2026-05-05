@@ -4,10 +4,11 @@ from game.dice import roll_dice
 from game.player.player import display_sheet
 from game.supplemental.combat import miss_dict, hit_dict
 from game.tutorial.scene_2 import scene_2
+from game.structural import slow_print
 
 def scene_1(p1, p2=None):
-    print("\n\nYou walk out the front door and see a bandit trying to rob you")
-    print("What do you do?")
+    slow_print("\n\nYou walk out the front door and see a bandit trying to rob you")
+    slow_print("What do you do?")
     print("1. Attack")
     print("2. Run")
     print("3. Display Character Sheet")
@@ -31,7 +32,7 @@ def damage_roll(weapons):
 
 def tutorial_fight(player, enemy):
     while player["statistics"]["hp"] > 0 and enemy["statistics"]["hp"] > 0:
-        print(f"\nYour HP: {player["statistics"]['hp']} | Bandit HP: {enemy["statistics"]['hp']}")
+        slow_print(f"\nYour HP: {player["statistics"]['hp']} | Bandit HP: {enemy["statistics"]['hp']}")
         print("1. Attack")
         print("2. Check Character Sheet")
 
@@ -49,32 +50,32 @@ def tutorial_fight(player, enemy):
             if attack > defense:
                 damage = damage_roll(weapon)
                 enemy["statistics"]["hp"] -= damage
-                print(hit_dict[random.randint(1,5)])
-                print(f"You deal {damage} damage!")
+                slow_print(hit_dict[random.randint(1,5)])
+                slow_print(f"You deal {damage} damage!")
             else:
-                print(miss_dict[random.randint(1,5)])
+                slow_print(miss_dict[random.randint(1,5)])
 
         elif choice == "2":
             turn_taken = False
             display_sheet(player)
 
         if turn_taken and enemy["statistics"]["hp"] > 0:
-            print("\nThe bandit flails around to hit you!")
+            slow_print("\nThe bandit flails around to hit you!")
             enemy_attack = roll_dice(d20=True)
-            print(f"The bandit rolled a {enemy_attack} to attack!")
+            slow_print(f"The bandit rolled a {enemy_attack} to attack!")
             player_defense = player["inventory"]["clothes"]["shirt"]["defense"]
 
             if enemy_attack > player_defense:
                 enemy_dmg = roll_dice(d4=True)
                 player["statistics"]["hp"] -= enemy_dmg
-                print(f"You take {enemy_dmg} damage!")
+                slow_print(f"You take {enemy_dmg} damage!")
             else:
-                print("The bandit misses!")
+                slow_print("The bandit misses!")
 
     if player["statistics"]["hp"] <= 0:
-        print("You lost!")
+        slow_print("You lost!")
     else:
-        print("You defeated the bandit!")
+        slow_print("You defeated the bandit!")
 
         scene_2(player)
 

@@ -3,6 +3,7 @@ from game.player.player import empty_player_dict, display_sheet
 from game.items.conventional_weapons import basic_spear
 from game.items.clothes import basic_tunic
 from game.tutorial.scene1 import scene_1
+from game.structural import slow_print
 
 def roll_stat(stat_name):
     while True:
@@ -27,17 +28,17 @@ def character_creation():
     cha = roll_stat("Charisma")
 
     player["statistics"]["dexterity"] = dex
-    print(f'\nYour Dexterity is {player["statistics"]["dexterity"]}')
+    slow_print(f'\nYour Dexterity is {player["statistics"]["dexterity"]}')
     player["statistics"]["wisdom"] = wis
-    print(f'Your Wisdom is {player["statistics"]["wisdom"]}')
+    slow_print(f'Your Wisdom is {player["statistics"]["wisdom"]}')
     player["statistics"]["charisma"] = cha
-    print(f'Your Charisma is {player["statistics"]["charisma"]}')
+    slow_print(f'Your Charisma is {player["statistics"]["charisma"]}')
 
     print(input("\nPress Enter to cont."))
 
-    print("You put on your tunic and grab your spear as you head out the door.\n")
+    slow_print("You put on your tunic and grab your spear as you head out the door.\n")
 
-    print("\x1B[3m* Your tunic and spear have been added to your inventory *\x1B[23m")
+    slow_print("\x1B[3m* Your tunic and spear have been added to your inventory *\x1B[23m")
     player["inventory"]["weapons"] = {"spear":basic_spear}
     player["inventory"]["clothes"] = {"shirt":basic_tunic}
 

@@ -1,9 +1,9 @@
 basic_tunic = {
     "name": "Rugged Tunic",
-    "defense": 15
+    "defense": 12
 }
 
 rough_leathers = {
     "name": "Rough Leathers",
-    "defense": 15
+    "defense": 10
 }

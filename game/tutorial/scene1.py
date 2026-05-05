@@ -1,9 +1,11 @@
+import random
 from tabnanny import check
 from game.items.clothes import rough_leathers
 from game.items.conventional_weapons import basic_spear
 from game.enemies.bandit import enemy
 from game.dice import roll_dice
 from game.player.player import display_sheet
+from game.supplemental.combat import miss_dict, hit_dict
 
 def scene_1(p1, p2=None):
     print("\n\nYou walk out the front door and see a bandit trying to rob you")
@@ -24,7 +26,7 @@ def scene_1(p1, p2=None):
         return scene_1(p1)
 
 def attack_roll(player, weapons):
-    return roll_dice(d20=True) + weapons["attack_bonus"] + player["statistics"]["dexterity"]
+    return roll_dice(d20=True) + weapons["attack_bonus"] + (player["statistics"]["dexterity"]/2)
 
 def damage_roll(weapons):
     return roll_dice(d6=True) + weapons["damage_bonus"]
@@ -38,26 +40,28 @@ def tutorial_fight(player, enemy):
         choice = input("Choose your action: ")
 
         if choice == "1":
+            print("\nYou ready and thrust your spear.")
             turn_taken = True
             weapon = player["inventory"]["weapons"]["spear"]
             defense = enemy["inventory"]["clothes"]["defense"]
 
-            attack = attack_roll(player, weapon)
+            attack = int(attack_roll(player, weapon))
             print(f"\nYou rolled {attack} to hit!")
 
             if attack > defense:
                 damage = damage_roll(weapon)
                 enemy["statistics"]["hp"] -= damage
-                print(f"Hit! You deal {damage} damage!")
+                print(hit_dict[random.randint(1,3)])
+                print(f"You deal {damage} damage!")
             else:
-                print("Miss!")
+                print(miss_dict[random.randint(1,5)])
 
         elif choice == "2":
             turn_taken = False
             display_sheet(player)
 
         if turn_taken and enemy["statistics"]["hp"] > 0:
-            print("\nThe bandit attacks!")
+            print("\nThe bandit flails around to hit you!")
             enemy_attack = roll_dice(d20=True)
             print(f"The bandit rolled a {enemy_attack} to attack!")
             player_defense = player["inventory"]["clothes"]["shirt"]["defense"]

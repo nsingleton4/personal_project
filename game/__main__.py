@@ -9,7 +9,6 @@ def roll_stat(stat_name):
         stat_roll = 8 + roll_dice(d10=True)
         choice = input(f"Your {stat_name} is {stat_roll} (1: Accept or 2: Reroll) ").lower().strip()
 
-
         if choice == "1":
             return stat_roll
         elif choice == "2":

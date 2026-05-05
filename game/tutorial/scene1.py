@@ -1,7 +1,4 @@
 import random
-from tabnanny import check
-from game.items.clothes import rough_leathers
-from game.items.conventional_weapons import basic_spear
 from game.enemies.bandit import enemy
 from game.dice import roll_dice
 from game.player.player import display_sheet

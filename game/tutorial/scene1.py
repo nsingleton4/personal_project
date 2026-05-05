@@ -51,7 +51,7 @@ def tutorial_fight(player, enemy):
             if attack > defense:
                 damage = damage_roll(weapon)
                 enemy["statistics"]["hp"] -= damage
-                print(hit_dict[random.randint(1,3)])
+                print(hit_dict[random.randint(1,5)])
                 print(f"You deal {damage} damage!")
             else:
                 print(miss_dict[random.randint(1,5)])

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="took out defend idk how to get that to work yet" />
+    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="adding random things">
+      <change beforePath="$PROJECT_DIR$/game/tutorial/scene1.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene1.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -222,22 +224,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754490511255</updated>
-    </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <option name="closed" value="true" />
-      <created>1754490776913</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1754490776913</updated>
-    </task>
-    <task id="LOCAL-00002" summary="initial commit">
-      <option name="closed" value="true" />
-      <created>1754505888663</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1754505888663</updated>
     </task>
     <task id="LOCAL-00003" summary="initial commit">
       <option name="closed" value="true" />
@@ -615,7 +601,23 @@
       <option name="project" value="LOCAL" />
       <updated>1778002979597</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="adding random things">
+      <option name="closed" value="true" />
+      <created>1778003016206</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1778003016206</updated>
+    </task>
+    <task id="LOCAL-00051" summary="adding random things">
+      <option name="closed" value="true" />
+      <created>1778003148931</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1778003148931</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -636,6 +638,7 @@
     <MESSAGE value="just having fun" />
     <MESSAGE value="fight scene" />
     <MESSAGE value="took out defend idk how to get that to work yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="took out defend idk how to get that to work yet" />
+    <MESSAGE value="adding random things" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding random things" />
   </component>
 </project>

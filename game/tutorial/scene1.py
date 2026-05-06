@@ -3,21 +3,8 @@ import time
 from game.enemies.bandit import enemy
 from game.player.player import display_sheet
 from game.tutorial.scene_2 import scene_2
-from game.structural import slow_print, ital, miss_dict, hit_dict, roll_dice
+from game.structural import slow_print, ital, miss_dict, hit_dict, roll_dice, rock_hit_dict, rock_miss_dict
 from game.player.transformations.earth import rock_monster
-
-
-def transform_player(player, new_dict):
-    transformed = player.copy()
-    for key1 in player:
-        if key1 in new_dict and type(new_dict[key1]) is dict:
-            for key2 in player[key1]:
-                if key2 in new_dict[key1]:
-                    transformed[key1][key2] = new_dict[key1][key2]
-        elif key1 in new_dict and type(new_dict[key1]) is str:
-            transformed[key1] = new_dict[key1]
-
-    return player, transformed
 
 def attack_roll(player, weapons):
     return roll_dice(d20=True) + weapons["attack_bonus"] + (player["statistics"]["dexterity"]/2)
@@ -25,7 +12,62 @@ def attack_roll(player, weapons):
 def damage_roll(weapons):
     return roll_dice(d6=True) + weapons["damage_bonus"]
 
-def tutorial_fight(player, enemy, choice):
+def rock_monster_fight(p1, enemy):
+    rock_transform = rock_monster
+    slow_print("\nRocks replace your skin, you feel invincible!")
+    while rock_transform["statistics"]["hp"] > 0 and enemy["statistics"]["hp"] > 0:
+        slow_print(f"\nYour HP: {rock_transform["statistics"]['hp']} | Bandit HP: {enemy["statistics"]['hp']}")
+        print("1. Attack")
+        print("2. Check Character Sheet")
+
+        choice = input("Choose your action: ")
+        turn_taken = False
+
+        weapon = rock_transform["inventory"]["weapons"]["weapon"]["fist"]
+        e_def = enemy["inventory"]["clothes"]["defense"]
+        if choice == "1":
+            print(ital("\nYou ready your fists."))
+            turn_taken = True
+            p_attk = int(attack_roll(rock_transform, weapon))
+            print(f"\nYou rolled {p_attk} to hit!")
+
+            if p_attk > e_def:
+                damage = damage_roll(weapon)
+                enemy["statistics"]["hp"] -= damage
+                slow_print(rock_hit_dict[random.randint(1,4)])
+                slow_print(f"You deal {damage} damage!")
+            else:
+                slow_print(rock_miss_dict[random.randint(1,4)])
+
+        elif choice == "2":
+            display_sheet(rock_transform)
+        else:
+            print("Choose between the options")
+            continue
+
+        enemy_attack = roll_dice(d20=True)
+        if turn_taken and enemy["statistics"]["hp"] > 0:
+            slow_print("\nThe bandit flails around to hit you!")
+
+            slow_print(f"The bandit rolled a {enemy_attack} to attack!")
+            player_defense = player["inventory"]["clothes"]["shirt"]["defense"]
+
+            if enemy_attack > player_defense:
+                enemy_dmg = roll_dice(d4=True)
+                rock_transform["statistics"]["hp"] -= enemy_dmg
+                slow_print(f"You take {enemy_dmg} damage!")
+            else:
+                slow_print("The bandit misses!")
+
+    if rock_transform["statistics"]["hp"] <= 0:
+        slow_print("You lost!")
+    else:
+        slow_print("You defeated the bandit!")
+        slow_print("\nYour skin becomes like flesh again.")
+        time.sleep(2)
+
+
+def tutorial_fight(player, enemy):
     while player["statistics"]["hp"] > 0 and enemy["statistics"]["hp"] > 0:
         slow_print(f"\nYour HP: {player["statistics"]['hp']} | Bandit HP: {enemy["statistics"]['hp']}")
         print("1. Attack")
@@ -39,10 +81,10 @@ def tutorial_fight(player, enemy, choice):
         if choice == "1":
             print(ital("\nYou ready and thrust your spear."))
             turn_taken = True
-            attack = int(attack_roll(player, weapon))
-            print(f"\nYou rolled {attack} to hit!")
+            p_attk = int(attack_roll(player, weapon))
+            print(f"\nYou rolled {p_attk} to hit!")
 
-            if attack > e_def:
+            if p_attk > e_def:
                 damage = damage_roll(weapon)
                 enemy["statistics"]["hp"] -= damage
                 slow_print(hit_dict[random.randint(1,5)])
@@ -78,8 +120,6 @@ def tutorial_fight(player, enemy, choice):
 
         scene_2(player)
 
-def new_guy_fight():
-    pass
 
 def escape(player):
     print("""\nYou hear the bandit laughing as you run saying \x1B[3mI'm gonna get all your stuff!\x1B[0m""")
@@ -102,7 +142,19 @@ def scene_1(p1, p2=None):
         display_sheet(p1)
         return scene_1(p1)
     elif action.lower() == "4":
-        new_guy_fight(p1)
+        rock_monster_fight(p1, enemy)
     else:
         print("You must make another selection.")
         return scene_1(p1)
+
+
+
+# def transform_player(player, new_dict):
+#     transformed = player.copy()
+#     for key, value in new_dict.items():
+#         if isinstance(value,dict) and key in transformed:
+#             #recuse in nested dicts
+#             transformed[key] = transform_player(transformed[key], value)[1]
+#         else:
+#             transformed[key] = value
+#     return player, transformed

@@ -45,3 +45,17 @@ hit_dict = {
     4: "Your weapon hits with force!",
     5: "A direct blow lands on target!"
 }
+
+rock_hit_dict = {
+    1: "A solid hit connects!",
+    2: "You smash through your enemy!",
+    3: "Your fists hits with force!",
+    4: "A direct blow lands on target!"
+}
+
+rock_miss_dict = {
+    1: "You swing wide!",
+    2: "The enemy dodges!",
+    3: "Your attack misses!",
+    4: "Your blow glances off harmlessly!"
+}

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="added ital function">
+    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="transformation for loop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/player/transformations/earth.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/player/transformations/earth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/structural.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/structural.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/tutorial/scene1.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,14 +227,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754490511255</updated>
-    </task>
-    <task id="LOCAL-00014" summary="just having fun">
-      <option name="closed" value="true" />
-      <created>1777491105917</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1777491105917</updated>
     </task>
     <task id="LOCAL-00015" summary="just having fun">
       <option name="closed" value="true" />
@@ -619,7 +612,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778017775593</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="transformation for loop">
+      <option name="closed" value="true" />
+      <created>1778088821933</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1778088821933</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -644,6 +645,7 @@
     <MESSAGE value="just muckin about" />
     <MESSAGE value="added slow printing because it seemed cool" />
     <MESSAGE value="added ital function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ital function" />
+    <MESSAGE value="transformation for loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="transformation for loop" />
   </component>
 </project>

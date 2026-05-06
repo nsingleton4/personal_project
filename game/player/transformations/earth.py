@@ -1,9 +1,8 @@
-# make a dictionary rather than a class for the transformations
-
-# class Earth_Elemental:
-#     def __init__(self, strength, speed, durability, range):
-#         self.strength = 15,
-#         self.speed = 5,
-#         self.durability = 20
-#         self.range = 10
-#
+rock_monster = {
+    "statistics": {
+        "dexterity": 10,
+        "wisdom": 10,
+        "charisma": 10,
+        "hp": 10
+    }
+}

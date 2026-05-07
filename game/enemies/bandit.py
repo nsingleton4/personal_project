@@ -1,4 +1,4 @@
-from game.items.conventional_weapons import worn_longsword
+from game.items.weapons import worn_longsword
 from game.items.clothes import rough_leathers
 from game.structural import roll_dice
 

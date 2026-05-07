@@ -1,25 +1,10 @@
-player = {
-    "name": None,
-    "statistics": {
-        "dexterity": None,
-        "wisdom": None,
-        "charisma": None
-    },
-    "inventory": {
-        "weapons": None,
-        "clothes": None
-    },
-}
+import random
 
-def display_player(player):
-    print(f"\nName: {player['name']}")
-    print() # blank line
-    print(' -- Statistics -- ')
-    for stat, value in player["statistics"].items():
-        print(f"{stat.capitalize()}: {value}")
-    print()
-    print(' -- Inventory -- ')
-    for category, items in player["inventory"].items():
-        print(f"{category.capitalize()}: {items}")
+def roll():
+    roll_1 = random.randint(1,2)
+    if roll_1 == 1:
+        print("Heads")
+    else:
+        print("Tails")
 
-display_player(player)
+roll()

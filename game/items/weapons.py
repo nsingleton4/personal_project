@@ -17,3 +17,11 @@ worn_longsword = {
     "damage_bonus": 0,
     "scaling": "dexterity"
 }
+earth_fists = {
+    "name": "Earth Fists",
+    "attack_dice": "d20",
+    "damage_dice": "d10",
+    "attack_bonus": 0,
+    "damage_bonus": 2,
+    "scaling": None
+}

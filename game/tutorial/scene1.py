@@ -12,7 +12,7 @@ def attack_roll(player, weapons):
 def damage_roll(weapons):
     return roll_dice(d6=True) + weapons["damage_bonus"]
 
-def rock_monster_fight(p1, enemy):
+def rock_monster_fight(player, enemy):
     rock_transform = rock_monster
     slow_print("\nRocks replace your skin, you feel invincible!")
     while rock_transform["statistics"]["hp"] > 0 and enemy["statistics"]["hp"] > 0:
@@ -23,16 +23,18 @@ def rock_monster_fight(p1, enemy):
         choice = input("Choose your action: ")
         turn_taken = False
 
-        weapon = rock_transform["inventory"]["weapons"]["weapon"]["fist"]
+        p_weap = rock_transform["inventory"]["weapons"]
+        p_def = rock_transform["inventory"]["skin"]
         e_def = enemy["inventory"]["clothes"]["defense"]
+
         if choice == "1":
             print(ital("\nYou ready your fists."))
             turn_taken = True
-            p_attk = int(attack_roll(rock_transform, weapon))
+            p_attk = int(attack_roll(rock_transform, p_weap))
             print(f"\nYou rolled {p_attk} to hit!")
 
             if p_attk > e_def:
-                damage = damage_roll(weapon)
+                damage = damage_roll(p_weap)
                 enemy["statistics"]["hp"] -= damage
                 slow_print(rock_hit_dict[random.randint(1,4)])
                 slow_print(f"You deal {damage} damage!")
@@ -50,9 +52,8 @@ def rock_monster_fight(p1, enemy):
             slow_print("\nThe bandit flails around to hit you!")
 
             slow_print(f"The bandit rolled a {enemy_attack} to attack!")
-            player_defense = player["inventory"]["clothes"]["shirt"]["defense"]
 
-            if enemy_attack > player_defense:
+            if enemy_attack > p_def:
                 enemy_dmg = roll_dice(d4=True)
                 rock_transform["statistics"]["hp"] -= enemy_dmg
                 slow_print(f"You take {enemy_dmg} damage!")
@@ -65,6 +66,7 @@ def rock_monster_fight(p1, enemy):
         slow_print("You defeated the bandit!")
         slow_print("\nYour skin becomes like flesh again.")
         time.sleep(2)
+        scene_2(player)
 
 
 def tutorial_fight(player, enemy):

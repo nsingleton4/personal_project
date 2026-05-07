@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="need to fix rock_moneter_fight and add the weapons and defense values to the rock monster">
+    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="muckin about">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/enemies/bandit.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/enemies/bandit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/items/clothes.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/items/clothes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/items/conventional_weapons.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/items/weapons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/player/transformations/earth.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/player/transformations/earth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/tutorial/scene1.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,14 +224,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754490511255</updated>
-    </task>
-    <task id="LOCAL-00016" summary="just having fun">
-      <option name="closed" value="true" />
-      <created>1777492701345</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1777492701345</updated>
     </task>
     <task id="LOCAL-00017" summary="just having fun">
       <option name="closed" value="true" />
@@ -624,7 +609,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778091438324</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="muckin about">
+      <option name="closed" value="true" />
+      <created>1778179896010</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1778179896026</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -651,6 +644,7 @@
     <MESSAGE value="added ital function" />
     <MESSAGE value="transformation for loop" />
     <MESSAGE value="need to fix rock_moneter_fight and add the weapons and defense values to the rock monster" />
-    <option name="LAST_COMMIT_MESSAGE" value="need to fix rock_moneter_fight and add the weapons and defense values to the rock monster" />
+    <MESSAGE value="muckin about" />
+    <option name="LAST_COMMIT_MESSAGE" value="muckin about" />
   </component>
 </project>

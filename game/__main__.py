@@ -15,7 +15,7 @@ def roll_stat(stat_name):
         elif choice == "2":
             continue
         else:
-            print('Please type "Accept" or "Reroll"')
+            print('Please type 1 (Accept) or 2 (Reroll)')
 
 def character_creation():
     player = empty_player_dict.copy()

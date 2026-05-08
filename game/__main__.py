@@ -4,6 +4,7 @@ from game.items.weapons import basic_spear
 from game.items.clothes import basic_tunic
 from game.tutorial.scene1 import scene_1
 from game.structural import slow_print, ital, roll_dice
+from game.environment import entity
 
 def roll_stat(stat_name):
     while True:

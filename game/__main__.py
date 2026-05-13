@@ -1,10 +1,9 @@
 import time
-from game.player.player import empty_player_dict, display_sheet
-from game.items.weapons import basic_spear
-from game.items.clothes import basic_tunic
+from game.player.player import *
+from game.items.weapons import *
+from game.items.clothes import *
 from game.tutorial.scene1 import scene_1
-from game.structural import slow_print, ital, roll_dice
-from game.environment import entity
+from game.structural import *
 
 def roll_stat(stat_name):
     while True:

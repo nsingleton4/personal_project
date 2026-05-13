@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="muckin about">
-      <change afterPath="$PROJECT_DIR$/game/environment.py" afterDir="false" />
+    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="trying to get hexagonal grid working">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_4_2026_10_45_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_4_2026_10_45_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/items/clothes.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/items/clothes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/items/weapons.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/items/weapons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/player/transformations/earth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/structural.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/structural.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/tutorial/scene1.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/tutorial/scene_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,29 +54,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.__main__ (1).executor": "Run",
-    "Python.__main__.executor": "Run",
-    "Python.dice (1).executor": "Run",
-    "Python.dice.executor": "Run",
-    "Python.environment.executor": "Run",
-    "Python.general_test.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.player_shifter.executor": "Run",
-    "Python.scene1.executor": "Run",
-    "Python.scene_1.executor": "Run",
-    "Python.scratch.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "F:/personal/PycharmProjects/personal_project",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.__main__ (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.__main__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dice (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.dice.executor&quot;: &quot;Run&quot;,
+    &quot;Python.environment.executor&quot;: &quot;Run&quot;,
+    &quot;Python.general_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.player_shifter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scene1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scene_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/personal/PycharmProjects/personal_project&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.environment">
     <configuration name="__main__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Personal_Project" />
@@ -228,14 +234,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754490511255</updated>
-    </task>
-    <task id="LOCAL-00018" summary="just having fun">
-      <option name="closed" value="true" />
-      <created>1777495605039</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1777495605039</updated>
     </task>
     <task id="LOCAL-00019" summary="just having fun">
       <option name="closed" value="true" />
@@ -621,7 +619,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778181381854</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="trying to get hexagonal grid working">
+      <option name="closed" value="true" />
+      <created>1778270837409</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1778270837409</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -649,6 +655,7 @@
     <MESSAGE value="transformation for loop" />
     <MESSAGE value="need to fix rock_moneter_fight and add the weapons and defense values to the rock monster" />
     <MESSAGE value="muckin about" />
-    <option name="LAST_COMMIT_MESSAGE" value="muckin about" />
+    <MESSAGE value="trying to get hexagonal grid working" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to get hexagonal grid working" />
   </component>
 </project>

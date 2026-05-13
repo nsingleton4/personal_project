@@ -1,6 +1,8 @@
 import time
 import os
+import random
 
+### Text Editing ###
 def slow_print(text, delay=0.03):
     for char in text:
         print(char, end='', flush=True)
@@ -12,8 +14,7 @@ def ital(text):
 def bold(text):
     return f"\x1B[1m{text}\x1B[22m"
 
-import random
-
+### Dice Rolls ###
 def roll_dice(d20=False, d10=False, d6=False, d4=True, number = 1):
     if d20:
         return random.randint(1,20)
@@ -27,9 +28,7 @@ def roll_dice(d20=False, d10=False, d6=False, d4=True, number = 1):
         print("No dice chosen")
 
 
-if __name__ == "__main__":
-    print(roll_dice(d20 = True))
-
+### Fight Dictionaries ###
 miss_dict = {
     1: "You swing wide!",
     2: "The enemy dodges!",
@@ -46,16 +45,5 @@ hit_dict = {
     5: "A direct blow lands on target!"
 }
 
-rock_hit_dict = {
-    1: "A solid hit connects!",
-    2: "You smash through your enemy!",
-    3: "Your fists hits with force!",
-    4: "A direct blow lands on target!"
-}
-
-rock_miss_dict = {
-    1: "You swing wide!",
-    2: "The enemy dodges!",
-    3: "Your attack misses!",
-    4: "Your blow glances off harmlessly!"
-}
+if __name__ == "__main__":
+    print(roll_dice(d20 = True))

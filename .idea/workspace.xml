@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="trying to get hexagonal grid working">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_4_2026_10_45_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_4_2026_10_45_AM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="hexagonal grid?">
+      <change afterPath="$PROJECT_DIR$/game/player/game_state.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/items/clothes.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/items/clothes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/items/weapons.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/items/weapons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/player/transformations/earth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/environment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/structural.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/structural.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/tutorial/scene1.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/tutorial/scene_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +73,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.environment">
+  <component name="RunManager" selected="Python.scratch">
     <configuration name="__main__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Personal_Project" />
       <option name="ENV_FILES" value="" />
@@ -212,8 +208,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.environment" />
         <item itemvalue="Python.scratch" />
+        <item itemvalue="Python.environment" />
         <item itemvalue="Python.__main__ (1)" />
         <item itemvalue="Python.dice (1)" />
         <item itemvalue="Python.scene1" />
@@ -234,14 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754490511255</updated>
-    </task>
-    <task id="LOCAL-00019" summary="just having fun">
-      <option name="closed" value="true" />
-      <created>1777495966074</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1777495966074</updated>
     </task>
     <task id="LOCAL-00020" summary="just having fun">
       <option name="closed" value="true" />
@@ -627,7 +615,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778270837409</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="hexagonal grid?">
+      <option name="closed" value="true" />
+      <created>1778700630849</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1778700630849</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -656,6 +652,7 @@
     <MESSAGE value="need to fix rock_moneter_fight and add the weapons and defense values to the rock monster" />
     <MESSAGE value="muckin about" />
     <MESSAGE value="trying to get hexagonal grid working" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to get hexagonal grid working" />
+    <MESSAGE value="hexagonal grid?" />
+    <option name="LAST_COMMIT_MESSAGE" value="hexagonal grid?" />
   </component>
 </project>

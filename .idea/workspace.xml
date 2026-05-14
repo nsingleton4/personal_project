@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="hexagonal grid?">
+    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="environment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/player/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/player/player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,14 +231,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754490511255</updated>
-    </task>
-    <task id="LOCAL-00022" summary="just having fun">
-      <option name="closed" value="true" />
-      <created>1777497323714</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1777497323714</updated>
     </task>
     <task id="LOCAL-00023" summary="just having fun">
       <option name="closed" value="true" />
@@ -626,7 +616,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778705361845</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="environment">
+      <option name="closed" value="true" />
+      <created>1778774786673</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1778774786673</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -656,6 +654,7 @@
     <MESSAGE value="muckin about" />
     <MESSAGE value="trying to get hexagonal grid working" />
     <MESSAGE value="hexagonal grid?" />
-    <option name="LAST_COMMIT_MESSAGE" value="hexagonal grid?" />
+    <MESSAGE value="environment" />
+    <option name="LAST_COMMIT_MESSAGE" value="environment" />
   </component>
 </project>

@@ -15,6 +15,7 @@ empty_player_dict = {
         "weapons": None,
         "clothes": None
     },
+    "position": None,
     "initiative": 1 + roll_dice(d6=True)
 }
 
@@ -65,12 +66,10 @@ def character_creation():
 
 def display_sheet(player):
     print(f"\nName: {player['name']}")
-    print() # blank line
-    print(' -- Statistics -- ')
+    print('\n -- Statistics -- ')
     for stat, value in player["statistics"].items():
         print(f"{stat.lower()}: {value}")
-    print()
-    print(' -- Inventory -- ')
+    print('\n -- Inventory -- ')
     for category, items in player["inventory"].items():
         print(f"{category.lower()}: {items}")
 

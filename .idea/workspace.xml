@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="environment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/enemies/bandit.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/enemies/bandit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/player/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/player/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/tutorial/scene1.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/tutorial/scene_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +80,7 @@
       <recent name="F:\personal\PycharmProjects\personal_project\scratch" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.environment">
+  <component name="RunManager" selected="Python.__main__ (1)">
     <configuration name="__main__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Personal_Project" />
       <option name="ENV_FILES" value="" />
@@ -209,9 +215,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.__main__ (1)" />
         <item itemvalue="Python.environment" />
         <item itemvalue="Python.scratch2" />
-        <item itemvalue="Python.__main__ (1)" />
         <item itemvalue="Python.scratch" />
         <item itemvalue="Python.dice (1)" />
       </list>
@@ -231,14 +237,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754490511255</updated>
-    </task>
-    <task id="LOCAL-00023" summary="just having fun">
-      <option name="closed" value="true" />
-      <created>1777576255459</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1777576255459</updated>
     </task>
     <task id="LOCAL-00024" summary="just having fun">
       <option name="closed" value="true" />
@@ -624,7 +622,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778774786673</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="environment">
+      <option name="closed" value="true" />
+      <created>1778776837883</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1778776837883</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

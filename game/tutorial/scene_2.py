@@ -5,10 +5,10 @@ import time
 def scene_2(player):
     slow_print("\nYou see the bandit laying on the ground in front of you. Reeling from the combat, your friend rushes over.")
     slow_print('Niki says "Are you hurt? Here, let me help."')
-    time.sleep(1.5)
+    time.sleep(1)
     if player["statistics"]["hp"] < 10:
-        slow_print(ital('\n Niki rubs a balm on your wounds and heals them.*'))
-        slow_print(ital('She looks at you and say "What happened?"'))
+        slow_print(ital('\n* Niki rubs a balm on your wounds and heals them.*'))
+        slow_print('She looks at you and say "What happened?"')
         player["hp"] = 10
         slow_print(ital(f"Niki has healed you back up to {player["hp"]} hit points!"))
     else:

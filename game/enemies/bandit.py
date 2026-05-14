@@ -2,7 +2,7 @@ from game.items.weapons import worn_longsword
 from game.items.clothes import rough_leathers
 from game.structural import roll_dice
 
-enemy = {
+bandit = {
     "name": "Bandit",
     "statistics": {
         "hp": 10,
@@ -14,5 +14,6 @@ enemy = {
         "weapon": worn_longsword,
         "clothes": rough_leathers
     },
+    "position": [0,0],
     "initiative": 1 + roll_dice(d6=True)
 }

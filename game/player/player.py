@@ -1,3 +1,4 @@
+from game.environment import *
 from game.structural import *
 from game.items.weapons import *
 from game.items.clothes import *
@@ -15,9 +16,11 @@ empty_player_dict = {
         "weapons": None,
         "clothes": None
     },
-    "position": None,
+    "position": [0,0],
     "initiative": 1 + roll_dice(d6=True)
 }
+
+
 
 def roll_stat(stat_name):
     while True:

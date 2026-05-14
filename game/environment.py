@@ -1,23 +1,31 @@
+
 import tkinter as tk
 
-class App(tk.Tk):
+import tkinter as tk
+
+
+class Grid(tk.Tk):
     def __init__(self, player):
         super().__init__()
 
-        self.canvas = tk.Canvas(self, width=500, height=500,
-                                borderwidth=0, highlightthickness=0)
+        self.canvas = tk.Canvas(
+            self,
+            width=500,
+            height=500,
+            borderwidth=0,
+            highlightthickness=0
+        )
         self.canvas.pack(fill="both", expand=True)
 
-        self.rows = 20
-        self.columns = 20
-        self.cell_width = 25
-        self.cell_height = 25
+        self.rows = 10
+        self.columns = 10
+        self.cell_width = 30
+        self.cell_height = 30
         self.player = player
 
         self.rect = {}
         self.oval = {}
 
-        # currently selected circle
         self.selected = None
 
         for column in range(self.columns):
@@ -28,14 +36,12 @@ class App(tk.Tk):
                 x2 = x1 + self.cell_width
                 y2 = y1 + self.cell_height
 
-                # background rectangle
                 self.rect[row, column] = self.canvas.create_rectangle(
                     x1, y1, x2, y2,
                     fill="whitesmoke",
                     outline="gray"
                 )
 
-                # circle
                 oval = self.canvas.create_oval(
                     x1 + 2, y1 + 2,
                     x2 - 2, y2 - 2,
@@ -45,19 +51,22 @@ class App(tk.Tk):
 
                 self.oval[row, column] = oval
 
-                # bind click event
-                self.canvas.tag_bind(
-                    oval,
-                    "<Button-1>",
-                    lambda event, r=row, c=column: self.select_circle(r, c)
-                )
+    def update_position(self, old_pos=None, character=None, color=None):
 
-    def update_position(self, character=None, color=None):
         if character is None:
             character = self.player
-            # fill new selected circle
+
+        if old_pos:
+            self.canvas.itemconfig(
+                self.oval[old_pos[0], old_pos[1]],
+                fill="white"
+            )
+
+        row = character["position"][0]
+        col = character["position"][1]
+
         self.canvas.itemconfig(
-            self.oval[character["position"][0], character["position"][1]],
+            self.oval[row, col],
             fill="dodgerblue" if color is None else color
         )
 
@@ -82,6 +91,6 @@ class App(tk.Tk):
     #
 
 if __name__ == "__main__":
-    app = App()
+    app = App(player)
     app.mainloop()
 

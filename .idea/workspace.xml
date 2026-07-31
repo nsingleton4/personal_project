@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="environment">
-      <change afterPath="$PROJECT_DIR$/game/items/equipment.py" afterDir="false" />
+    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="muckin' about">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/enemies/bandit.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/enemies/bandit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/environment.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,15 +261,7 @@
       <workItem from="1784749245945" duration="571000" />
       <workItem from="1784752930576" duration="20000" />
       <workItem from="1784824403979" duration="756000" />
-      <workItem from="1785534597206" duration="1259000" />
-    </task>
-    <task id="LOCAL-00024" summary="just having fun">
-      <option name="closed" value="true" />
-      <created>1777577365905</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1777577365905</updated>
+      <workItem from="1785534597206" duration="1425000" />
     </task>
     <task id="LOCAL-00025" summary="just having fun">
       <option name="closed" value="true" />
@@ -659,7 +647,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778776837883</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="muckin' about">
+      <option name="closed" value="true" />
+      <created>1785535871035</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1785535871035</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -693,6 +689,7 @@
     <MESSAGE value="trying to get hexagonal grid working" />
     <MESSAGE value="hexagonal grid?" />
     <MESSAGE value="environment" />
-    <option name="LAST_COMMIT_MESSAGE" value="environment" />
+    <MESSAGE value="muckin' about" />
+    <option name="LAST_COMMIT_MESSAGE" value="muckin' about" />
   </component>
 </project>

@@ -3,15 +3,15 @@ from game.tutorial.scene1 import scene_1
 
 def start():
     while True:
-        begin = input("\nBegin adventure? (Yes or No) >>>  ")
-        if begin.lower() == "yes":
+        begin = input("\nBegin? (yes or no) >>>  ")
+        if begin() == {"yes", "y"}:
             player = character_creation()
             scene_1(player)
             break
-        elif begin.lower() in {'quit', 'no'}:
+        elif begin() in {'quit', 'no'}:
             break
         else:
-            print("\n \"{}\" is not a valid entry. Begin adventure? (yes or no) >>>  ".format(begin))
+            print("\n \"{}\" is not a valid entry. Begin? (yes or no) >>>  ".format(begin))
 
 if __name__ == "__main__":
     start()

@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="environment">
+      <change afterPath="$PROJECT_DIR$/game/items/equipment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/__main__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/enemies/bandit.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/enemies/bandit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/player/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/player/player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/tutorial/scene1.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/tutorial/scene_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/tutorial/scene_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +32,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/nsingleton4/personal_project.git&quot;,
-    &quot;accountId&quot;: &quot;4a89d7a5-4e51-4a05-9ea9-9407943d1a5b&quot;
+    &quot;accountId&quot;: &quot;c5347914-a90b-4daa-8497-cf388de634f0&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -51,30 +49,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.__main__ (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.__main__.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dice (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.dice.executor&quot;: &quot;Run&quot;,
-    &quot;Python.environment.executor&quot;: &quot;Run&quot;,
-    &quot;Python.general_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.player_shifter.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scene1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scene_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scratch2.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/personal/PycharmProjects/personal_project&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.__main__ (1).executor": "Run",
+    "Python.__main__.executor": "Run",
+    "Python.dice (1).executor": "Run",
+    "Python.dice.executor": "Run",
+    "Python.environment.executor": "Run",
+    "Python.general_test.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.player_shifter.executor": "Run",
+    "Python.scene1.executor": "Run",
+    "Python.scene_1.executor": "Run",
+    "Python.scratch.executor": "Run",
+    "Python.scratch2.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "F:/personal/PycharmProjects/personal_project",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\personal\PycharmProjects\personal_project\scratch" />
@@ -94,6 +98,9 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game/__main__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -116,6 +123,9 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game/dice.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -138,6 +148,9 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game/environment.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -160,6 +173,9 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -182,6 +198,9 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="F:\personal\PycharmProjects\personal_project\scratch\scratch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -204,6 +223,9 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch/scratch2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -226,7 +248,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-4c141bd692a7-e2d783800521-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.26927.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PY-262.8665.369" />
+        <option value="bundled-python-sdk-6fa658e1df1a-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.8665.369" />
       </set>
     </attachedChunks>
   </component>
@@ -237,6 +260,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754490511255</updated>
+      <workItem from="1783979773008" duration="526000" />
+      <workItem from="1784129487253" duration="678000" />
+      <workItem from="1784749245945" duration="571000" />
+      <workItem from="1784752930576" duration="20000" />
+      <workItem from="1784824403979" duration="756000" />
+      <workItem from="1785534597206" duration="1259000" />
     </task>
     <task id="LOCAL-00024" summary="just having fun">
       <option name="closed" value="true" />
@@ -632,6 +661,9 @@
     </task>
     <option name="localTasksCounter" value="73" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

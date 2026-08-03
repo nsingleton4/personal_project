@@ -1,8 +1,8 @@
-from game.enemies.bandit import bandit
-from game.player.player import display_sheet
-from game.tutorial.scene_2 import scene_2
-from game.structural import *
-from game.environment import *
+from attempt2.enemies.bandit import bandit
+from attempt2.player.player import display_sheet
+from attempt2.tutorial.scene_2 import scene_2
+from attempt2.structural import *
+from attempt2.environment import *
 
 def attack_roll(player, weapons):
     return roll_dice(d20=True) + weapons["attack_bonus"] + (player["statistics"]["dexterity"]/2)

@@ -1,7 +1,7 @@
-from game.environment import *
-from game.structural import *
-from game.items.weapons import *
-from game.items.clothes import *
+from attempt2.environment import *
+from attempt2.structural import *
+from attempt2.items.weapons import *
+from attempt2.items.clothes import *
 
 
 empty_player_dict = {
@@ -78,7 +78,7 @@ def display_sheet(player):
 
 
 
-# # for the game, start with an empty dictionary
+# # for the attempt2, start with an empty dictionary
 # player = dict()
 # # player = {} -> this makes a dict but python doesn't like it
 # # player["inventory"] = ... this resets the entire inventory

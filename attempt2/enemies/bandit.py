@@ -1,7 +1,7 @@
-from game.items.weapons import worn_longsword
-from game.items.clothes import rough_leathers
-from game.structural import roll_dice
-from game.items.equipment import *
+from attempt2.items.weapons import worn_longsword
+from attempt2.items.clothes import rough_leathers
+from attempt2.structural import roll_dice
+from attempt2.items.equipment import *
 
 bandit = {
     "name": "Bandit",

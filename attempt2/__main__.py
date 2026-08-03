@@ -1,5 +1,5 @@
-from game.player.player import *
-from game.tutorial.scene1 import scene_1
+from attempt2.player.player import *
+from attempt2.tutorial.scene1 import scene_1
 
 def start():
     while True:

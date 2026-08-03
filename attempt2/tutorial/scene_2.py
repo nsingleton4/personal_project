@@ -1,5 +1,5 @@
-from game.player.player import display_sheet
-from game.structural import *
+from attempt2.player.player import display_sheet
+from attempt2.structural import *
 import time
 
 def scene_2(player):

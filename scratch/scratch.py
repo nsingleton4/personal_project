@@ -1,6 +1,6 @@
 from tkinter import Tk, N, S, W, E, BOTH, Text, Frame,Label, Button,Checkbutton, IntVar,Entry
-from game.__main__ import *
-from game.player import player
+from attempt2.__main__ import *
+from attempt2.player import player
 
 
 class Example(Frame):

@@ -1,5 +1,5 @@
 from attempt2.player.player import display_sheet
-from attempt2.structural import *
+from structural import *
 import time
 
 def scene_2(player):

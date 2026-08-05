@@ -1,5 +1,3 @@
-from attempt2.structural import roll_dice
-
 basic_spear = {
     "name": "Trusty Spear",
     "attack_dice": "d20",

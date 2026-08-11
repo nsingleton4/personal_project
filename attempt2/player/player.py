@@ -1,5 +1,4 @@
-from attempt2.environment import *
-from attempt2.structural import *
+from structural import *
 from attempt2.items.weapons import *
 from attempt2.items.clothes import *
 

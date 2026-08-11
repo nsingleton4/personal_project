@@ -1,0 +1,37 @@
+from attempt2.items.weapons import *
+from attempt2.items.clothes import *
+
+from attempt2.structural import *
+class Enemy:
+    def __init__(self, name="", weapon=None, armor=None, health=None, level=None, str=None, dex=None, con=None):
+        self.name = name
+        self.weapon = weapon
+        self.armor = armor
+        self.health = health
+        self.level = level
+        self.str = str
+        self.dex = dex
+        self.con = con
+
+str_calc = 10 + roll_dice(d6=True)
+dex_calc = 10 + roll_dice(d6=True)
+con_calc = 10 + roll_dice(d6=True)
+
+# e1 = Enemy()
+# print(e1.stats())
+# e2 = Enemy()
+# print(e2.stats())
+
+
+### this is how I can make it so I can easily update the classes and make multiple enemies with changing inventories
+# e1 = Enemy("Nathan",
+#            basic_spear,
+#            basic_tunic,
+#            10,
+#            1,
+#            str_calc,
+#            dex_calc,
+#            con_calc)
+#
+# print(f"Your name is {e1.name} wielding a {e1.weapon} and wearing a {e1.armor}."
+#       f"\nYou feel healthy (hp: {e1.health}) and feel rather inexperienced (lvl: {e1.level}).")

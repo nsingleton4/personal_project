@@ -1,7 +1,7 @@
 from attempt2.items.weapons import *
 from attempt2.items.clothes import *
-
 from attempt2.structural import *
+
 class Enemy:
     def __init__(self, name="", weapon=None, armor=None, health=None, level=None, str=None, dex=None, con=None):
         self.name = name
@@ -13,9 +13,9 @@ class Enemy:
         self.dex = dex
         self.con = con
 
-str_calc = 10 + roll_dice(d6=True)
-dex_calc = 10 + roll_dice(d6=True)
-con_calc = 10 + roll_dice(d6=True)
+str_calc = 10 + roll(d6=True)
+dex_calc = 10 + roll(d6=True)
+con_calc = 10 + roll(d6=True)
 
 # e1 = Enemy()
 # print(e1.stats())

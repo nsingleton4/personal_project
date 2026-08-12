@@ -16,3 +16,10 @@ worn_longsword = {
     "scaling": "dexterity"
 }
 
+class Spear:
+    def __init__(self, dmg_dice=None, level=None, abilities=None):
+        self.dmg_dice = dmg_dice
+        self.level = level
+        self.abilities = abilities
+
+    def attack(self):

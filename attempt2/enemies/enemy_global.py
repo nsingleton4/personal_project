@@ -23,7 +23,7 @@ con_calc = 10 + roll(d6=True)
 # print(e2.stats())
 
 
-### this is how I can make it so I can easily update the classes and make multiple enemies with changing inventories
+# ### this is how I can make it so I can easily update the classes and make multiple enemies with changing inventories
 # e1 = Enemy("Nathan",
 #            basic_spear,
 #            basic_tunic,
@@ -32,6 +32,11 @@ con_calc = 10 + roll(d6=True)
 #            str_calc,
 #            dex_calc,
 #            con_calc)
+# print(e1.weapon)
+# #
+# # print(f"Your name is {e1.name} wielding a {e1.weapon} and wearing a {e1.armor}."
+# #       f"\nYou feel healthy (hp: {e1.health}) and feel rather inexperienced (lvl: {e1.level}).")
 #
-# print(f"Your name is {e1.name} wielding a {e1.weapon} and wearing a {e1.armor}."
-#       f"\nYou feel healthy (hp: {e1.health}) and feel rather inexperienced (lvl: {e1.level}).")
+# # this is how to change certain characteristics of a part of a class to update it as you go
+# e1.weapon = "sword"
+# print(e1.weapon)

@@ -1,3 +1,4 @@
+from attempt2.structural import roll
 basic_spear = {
     "name": "Trusty Spear",
     "attack_dice": "d20",
@@ -16,10 +17,22 @@ worn_longsword = {
     "scaling": "dexterity"
 }
 
-class Spear:
+class TwoHanded:
     def __init__(self, name = "", atk_dice=None, dmg_dice=None, level=None, abilities=None):
         self.name = name
         self.atk_dice = atk_dice
         self.dmg_dice = dmg_dice
         self.level = level
         self.abilities = abilities
+
+class Spear(TwoHanded):
+    def __init__(self):
+        super().__init__()
+
+class Greatsword(TwoHanded):
+    def __init__(self):
+        super().__init__()
+
+spear_basic = Spear()
+
+print(spear_basic.name)

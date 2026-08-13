@@ -1,5 +1,5 @@
-from attempt2.items.weapons import worn_longsword
-from attempt2.items.clothes import rough_leathers
+from att.items.weapons import worn_longsword
+from att.items.clothes import rough_leathers
 from structural import roll_dice
 
 bandit = {

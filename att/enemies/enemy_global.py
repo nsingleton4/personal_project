@@ -1,6 +1,6 @@
-from attempt2.items.weapons import *
-from attempt2.items.clothes import *
-from attempt2.structural import *
+from att.items.weapons import *
+from att.items.clothes import *
+from att.structural import *
 
 class Enemy:
     def __init__(self, name="", weapon=None, armor=None, health=None, level=None, str=None, dex=None, con=None):

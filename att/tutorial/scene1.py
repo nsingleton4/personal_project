@@ -1,6 +1,6 @@
-from attempt2.enemies.bandit import bandit
-from attempt2.player.player import display_sheet
-from attempt2.tutorial.scene_2 import scene_2
+from att.enemies.bandit import bandit
+from att.player.player import display_sheet
+from att.tutorial.scene_2 import scene_2
 from structural import *
 
 

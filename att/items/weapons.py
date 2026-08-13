@@ -1,4 +1,4 @@
-from attempt2.structural import roll
+from att.structural import roll
 basic_spear = {
     "name": "Trusty Spear",
     "attack_dice": "d20",

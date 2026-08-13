@@ -1,6 +1,6 @@
 from structural import *
-from attempt2.items.weapons import *
-from attempt2.items.clothes import *
+from att.items.weapons import *
+from att.items.clothes import *
 
 
 empty_player_dict = {
@@ -77,7 +77,7 @@ def display_sheet(player):
 
 
 
-# # for the attempt2, start with an empty dictionary
+# # for the att, start with an empty dictionary
 # player = dict()
 # # player = {} -> this makes a dict but python doesn't like it
 # # player["inventory"] = ... this resets the entire inventory

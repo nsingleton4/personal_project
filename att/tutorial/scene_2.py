@@ -1,4 +1,4 @@
-from attempt2.player.player import display_sheet
+from att.player.player import display_sheet
 from structural import *
 import time
 

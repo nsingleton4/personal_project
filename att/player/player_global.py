@@ -1,4 +1,5 @@
 from att.structural import *
+from att.tutorial.intro_v2 import *
 
 class Player:
     def __init__(self, name="", weapon=None, armor=None, accessories=None, health=None, level=None, str=None, dex=None, con=None):
@@ -26,7 +27,7 @@ def make_player_1(var):
         p.con = c_stat_roll
         return s_stat_roll, d_stat_roll, c_stat_roll, display_sheet(p)
     elif choice == "2":
-        return make_player_1(var)
+        return make_player_1(p)
     else:
         print("Make a correct choice")
         return choice
@@ -37,7 +38,18 @@ def display_sheet(var):
     print(f"Strength: {p.str}, \nDexterity: {p.dex}, \nConstitution: {p.con}")
     print("\n --Inventory -- \n")
     print(f"Weapons: {p.weapon}, \nGear: {p.armor}, \nAccessories: {p.accessories}")
-    return
+    return intro(p)
+
+def intro(var):
+    choice = input(f"Are you ready to begin {p.name}? 1. Yes, 2. No >>> ")
+
+    if choice == "1":
+        start_intro(var)
+    elif choice == "2":
+        print("Are you sure pooki")
+        return intro(var)
+    else:
+        print("Try again later")
 
 n1 = input("What is your name? >>> ")
 print(f"Hello {n1}!")

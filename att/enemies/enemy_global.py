@@ -17,6 +17,10 @@ str_calc = 10 + roll(d6=True)
 dex_calc = 10 + roll(d6=True)
 con_calc = 10 + roll(d6=True)
 
+class Bandit(Enemy):
+    def __init__(self):
+        super().__init__()
+
 # e1 = Enemy()
 # print(e1.stats())
 # e2 = Enemy()

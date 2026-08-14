@@ -12,3 +12,6 @@ def roll(d20=False, d12=False, d10=False, d6=False,d4=False):
         return random.randint(1,4)
     else:
         return None
+
+e_names = ["Emma", "Liam", "Olivia", "Noah", "Ava", "Elijah", "Sophia", "James"]
+

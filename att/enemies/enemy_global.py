@@ -1,6 +1,6 @@
 from att.items.weapons import *
 from att.items.clothes import *
-from att.structural import *
+from att.structural import roll
 
 class Enemy:
     def __init__(self, name="", weapon=None, armor=None, health=None, level=None, str=None, dex=None, con=None):
@@ -13,15 +13,18 @@ class Enemy:
         self.dex = dex
         self.con = con
 
-str_calc = 10 + roll(d6=True)
-dex_calc = 10 + roll(d6=True)
-con_calc = 10 + roll(d6=True)
-
 class Bandit(Enemy):
     def __init__(self, name=None, weapon=None, armor=None, health=None, level=None, str=None, dex=None, con=None):
         super().__init__(name, weapon, armor, health, level, str, dex, con)
-        greatsword = Greatsword()
-        self.weapon = greatsword
+        shortsword = ShortSword()
+        tunic = Tunic()
+        self.weapon = shortsword
+        self.armor = tunic
+        self.str = 10 + roll(d8=True)
+        self.dex = 10 + roll(d8=True)
+        self.con = 10 + roll(d8=True)
+
+
 
 # e1 = Bandit()
 # print(e1.weapon.atk_roll)

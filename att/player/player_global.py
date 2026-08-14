@@ -1,5 +1,5 @@
 from att.structural import *
-from att.tutorial.intro_v2 import *
+from att.test.intro_v2 import *
 
 class Player:
     def __init__(self, name="", weapon=None, armor=None, accessories=None, health=None, level=None, str=None, dex=None, con=None):
@@ -12,4 +12,3 @@ class Player:
         self.str = str
         self.dex = dex
         self.con = con
-

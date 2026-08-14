@@ -18,13 +18,18 @@ dex_calc = 10 + roll(d6=True)
 con_calc = 10 + roll(d6=True)
 
 class Bandit(Enemy):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, name=None, weapon=None, armor=None, health=None, level=None, str=None, dex=None, con=None):
+        super().__init__(name, weapon, armor, health, level, str, dex, con)
+        greatsword = Greatsword()
+        self.weapon = greatsword
 
-# e1 = Enemy()
-# print(e1.stats())
-# e2 = Enemy()
-# print(e2.stats())
+# e1 = Bandit()
+# print(e1.weapon.atk_roll)
+# assigns e1 to the bandit class and calls the attack roll characteristic from
+# the weapon class greatsword to give a numeric value of the randomized roll
+
+# e2 = Bandit()
+# print(e2.weapon.atk_roll)
 
 
 # ### this is how I can make it so I can easily update the classes and make multiple enemies with changing inventories

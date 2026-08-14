@@ -1,5 +1,5 @@
 from att.enemies.bandit import bandit
-from att.player.player import display_sheet
+from att.player.player_old import display_sheet
 from att.tutorial.scene_2 import scene_2
 from structural import *
 

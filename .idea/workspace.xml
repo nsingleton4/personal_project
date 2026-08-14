@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="global player class">
-      <change afterPath="$PROJECT_DIR$/att/tutorial/intro_v2.py" afterDir="false" />
+    <list default="true" id="a8ea8969-83eb-4d26-8baf-19269d26a738" name="Changes" comment="muckin' about">
+      <change beforePath="$PROJECT_DIR$/.idea/Personal_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Personal_Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/att/enemies/bandit.py" beforeDir="false" afterPath="$PROJECT_DIR$/att/enemies/bandit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/att/enemies/enemy_global.py" beforeDir="false" afterPath="$PROJECT_DIR$/att/enemies/enemy_global.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/att/player/player_global.py" beforeDir="false" afterPath="$PROJECT_DIR$/att/player/player_global.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/att/structural.py" beforeDir="false" afterPath="$PROJECT_DIR$/att/structural.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/att/items/clothes.py" beforeDir="false" afterPath="$PROJECT_DIR$/att/items/clothes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/att/items/weapons.py" beforeDir="false" afterPath="$PROJECT_DIR$/att/items/weapons.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +58,7 @@
     "Python.enemy_global.executor": "Run",
     "Python.environment.executor": "Run",
     "Python.general_test.executor": "Run",
-    "Python.intro_v2.executor": "Run",
     "Python.main.executor": "Run",
-    "Python.player_global.executor": "Run",
     "Python.player_shifter.executor": "Run",
     "Python.scene1.executor": "Run",
     "Python.scene_1.executor": "Run",
@@ -90,7 +86,32 @@
       <recent name="F:\personal\PycharmProjects\personal_project\scratch" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.player_global">
+  <component name="RunManager" selected="Python.weapons (1)">
+    <configuration name="__main__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Personal_Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/game" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game/__main__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="enemy_global" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Personal_Project" />
       <option name="ENV_FILES" value="" />
@@ -116,7 +137,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="intro_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="environment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Personal_Project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,14 +146,14 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/att/tutorial" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/game" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="DEBUG_JUST_MY_CODE" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/att/tutorial/intro_v2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game/environment.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,31 +187,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="player_global" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Personal_Project" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/att/player" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/att/player/player_global.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="weapons (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Personal_Project" />
       <option name="ENV_FILES" value="" />
@@ -200,14 +196,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/attempt2/items" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/att/items" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/attempt2/items/weapons.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/att/items/weapons.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -243,19 +238,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.player_global" />
-        <item itemvalue="Python.intro_v2" />
         <item itemvalue="Python.weapons (1)" />
-        <item itemvalue="Python.weapons" />
         <item itemvalue="Python.enemy_global" />
+        <item itemvalue="Python.weapons" />
+        <item itemvalue="Python.__main__ (1)" />
+        <item itemvalue="Python.environment" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PY-262.9437.214" />
-        <option value="bundled-python-sdk-821f704e66d9-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.9437.214" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PY-262.8665.369" />
+        <option value="bundled-python-sdk-6fa658e1df1a-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.8665.369" />
       </set>
     </attachedChunks>
   </component>
@@ -276,13 +271,39 @@
       <workItem from="1785777710321" duration="5164000" />
       <workItem from="1785791540800" duration="1901000" />
       <workItem from="1786371233787" duration="12233000" />
-      <workItem from="1786544717711" duration="754000" />
-      <workItem from="1786556626356" duration="416000" />
-      <workItem from="1786557131677" duration="2509000" />
-      <workItem from="1786634728971" duration="1210000" />
-      <workItem from="1786650235360" duration="3792000" />
-      <workItem from="1786654047001" duration="46000" />
-      <workItem from="1786726467650" duration="2114000" />
+      <workItem from="1786544717711" duration="726000" />
+    </task>
+    <task id="LOCAL-00029" summary="just having fun">
+      <option name="closed" value="true" />
+      <created>1777647407036</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1777647407036</updated>
+    </task>
+    <task id="LOCAL-00030" summary="just having fun">
+      <option name="closed" value="true" />
+      <created>1777647476539</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1777647476539</updated>
+    </task>
+    <task id="LOCAL-00031" summary="just having fun">
+      <option name="closed" value="true" />
+      <created>1777653747968</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1777653747968</updated>
+    </task>
+    <task id="LOCAL-00032" summary="just having fun">
+      <option name="closed" value="true" />
+      <created>1777666660882</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1777666660882</updated>
     </task>
     <task id="LOCAL-00033" summary="just having fun">
       <option name="closed" value="true" />
@@ -644,39 +665,7 @@
       <option name="project" value="LOCAL" />
       <updated>1786545300894</updated>
     </task>
-    <task id="LOCAL-00078" summary="muckin' about">
-      <option name="closed" value="true" />
-      <created>1786545455746</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1786545455746</updated>
-    </task>
-    <task id="LOCAL-00079" summary="muckin' about">
-      <option name="closed" value="true" />
-      <created>1786557028450</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1786557028451</updated>
-    </task>
-    <task id="LOCAL-00080" summary="muckin' about">
-      <option name="closed" value="true" />
-      <created>1786635930353</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1786635930354</updated>
-    </task>
-    <task id="LOCAL-00081" summary="global player class">
-      <option name="closed" value="true" />
-      <created>1786654072462</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1786654072463</updated>
-    </task>
-    <option name="localTasksCounter" value="82" />
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -717,14 +706,10 @@
     <MESSAGE value="hexagonal grid?" />
     <MESSAGE value="environment" />
     <MESSAGE value="muckin' about" />
-    <MESSAGE value="global player class" />
-    <option name="LAST_COMMIT_MESSAGE" value="global player class" />
+    <option name="LAST_COMMIT_MESSAGE" value="muckin' about" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/personal_project$player_global.coverage" NAME="player_global Coverage Results" MODIFIED="1786728549682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/att/player" />
-    <SUITE FILE_PATH="coverage/personal_project$enemy_global.coverage" NAME="enemy_global Coverage Results" MODIFIED="1786556905970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/attempt2/enemies" />
-    <SUITE FILE_PATH="coverage/personal_project$weapons__1_.coverage" NAME="weapons (1) Coverage Results" MODIFIED="1786635717392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/attempt2/items" />
+    <SUITE FILE_PATH="coverage/personal_project$enemy_global.coverage" NAME="enemy_global Coverage Results" MODIFIED="1786469108033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/attempt2/enemies" />
     <SUITE FILE_PATH="coverage/personal_project$weapons.coverage" NAME="weapons Coverage Results" MODIFIED="1786458674742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/attempt3/items" />
-    <SUITE FILE_PATH="coverage/personal_project$intro_v2.coverage" NAME="intro_v2 Coverage Results" MODIFIED="1786727935078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/att/tutorial" />
   </component>
 </project>
